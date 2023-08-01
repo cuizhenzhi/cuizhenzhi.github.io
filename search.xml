@@ -4,13 +4,42 @@
   
     
     <entry>
+      <title>third passage</title>
+      <link href="/2023/07/31/third-passage/"/>
+      <url>/2023/07/31/third-passage/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>#第三篇文章</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>c++usage</title>
       <link href="/2023/07/31/c-usage/"/>
       <url>/2023/07/31/c-usage/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>#日志<br>  今天布置了网站封面，添加底部音乐元素， 增加留言板设置</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="这是一篇关于网络安全的文章"><a href="#这是一篇关于网络安全的文章" class="headerlink" title="这是一篇关于网络安全的文章"></a>这是一篇关于网络安全的文章</h1><h2 id="这是一篇关于计算机网络的文章"><a href="#这是一篇关于计算机网络的文章" class="headerlink" title="这是一篇关于计算机网络的文章"></a>这是一篇关于计算机网络的文章</h2><p>#日志<br>  今天布置了网站封面，添加底部音乐元素， 增加留言板设置</p>]]></content>
       
       
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> java </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
       
     </entry>
     
@@ -21,13 +50,23 @@
       <link href="/2023/07/29/First-blog/"/>
       <url>/2023/07/29/First-blog/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><hr><p>title: Hexo的建设及踩坑<br>top: true<br>cover: <a href="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg">http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg</a> </p><hr><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>代码测试：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello&quot;</span>)</span><br></pre></td></tr></table></figure><p>unbelievable </p><p>图片测试：</p><p><img src="http://mculover666.cn/blog/20191031/R4mWMXsrRKxu.png?imageslim"></p><p>引用测试：</p><blockquote><p>这是一条引用</p></blockquote><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>无序列表测试：</p><ul><li>哈哈</li><li>嘿嘿</li><li>吼吼</li></ul><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="这是一篇关于计算机网络的文章"><a href="#这是一篇关于计算机网络的文章" class="headerlink" title="这是一篇关于计算机网络的文章"></a>这是一篇关于计算机网络的文章</h2><hr><hr><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>代码测试：</p><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello&quot;</span>)</span><br></pre></td></tr></table></figure><p>unbelievable </p><p>图片测试：</p><p><img src="http://mculover666.cn/blog/20191031/R4mWMXsrRKxu.png?imageslim"></p><p>引用测试：</p><blockquote><p>这是一条引用</p></blockquote><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>无序列表测试：</p><ul><li>哈哈</li><li>嘿嘿</li><li>吼吼</li></ul><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4>]]></content>
       
+      
+      <categories>
+          
+          <category> 计算机网络 </category>
+          
+      </categories>
       
       
         <tags>
             
             <tag> c++ </tag>
+            
+            <tag> java </tag>
+            
+            <tag> python </tag>
             
         </tags>
       

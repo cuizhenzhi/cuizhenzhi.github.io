@@ -1,0 +1,9 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>@font-face {
+    font-family: 'YOUSHEhaoshenti';
+    src: url('YOUSHEhaoshenti.woff2') format('woff2'),
+        url('YOUSHEhaoshenti.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
