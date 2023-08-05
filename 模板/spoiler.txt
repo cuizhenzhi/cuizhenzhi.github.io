@@ -1,0 +1,69 @@
+
+
+隐藏文字隐藏文字隐藏文字。
+支持 `markdown` 语法
+
+- 支持 **粗体**、*斜体*
+- 支持列表
+- 支持md插入图片语法：![1](hexo-pictures/hexo-6_1.png)
+- 支持html插入图片语法：<img src = "hexo-pictures/hexo-6_1.png">
+- 支持行内代码 `markdown`
+- 支持代码块
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+bool printarray(int n) {
+   // int * originalarray = new int[2*n];
+    int* processedarray = new int[2*n+1];
+    for (int i = 0; i <= 2*n; i++) {
+        processedarray[i] = 0;
+    }
+    for (int i = n + 1, j = 0; i <= 2 * n; i += 2, j++) {
+        int tmp = 2 * n + 1 - (n >> 1) + j - i;
+        //cout << i << " " << tmp << " ";
+        processedarray[i] = processedarray[tmp] = 1;
+    }
+    for (int i = n + 2, j = 0; j < (n >> 1); i += 2, j++) {
+        int tmp = 2 * n + 2 + j - i;
+        //cout << i << " " << tmp << " ";
+        processedarray[i] = processedarray[tmp] = 1;
+    }
+    for (int i = 1; i <= 2 * n; i++) {
+        if (processedarray[i] != 1) {
+            cout << "Oops!"<<n<<" is bad!" << endl;
+            for (int i = 0; i <= 2 * n; i++) {
+                cout<<processedarray[i];            }
+            return false;
+            delete[] processedarray;
+        }
+    }
+    //cout << endl;
+    delete[] processedarray;
+    return true;
+   // delete[] originalarray;
+}
+int main() {
+    int test = 10000;
+    int n = 1;
+    bool continue1 = true;
+    while (test--&&continue1){
+        if (n % 2 == 0) {
+            //cout << "NO" << endl;
+        }
+        else {
+            continue1 = printarray(n);
+        }
+        n += 2;
+    }
+    cout << "n = " << n << endl;
+}
+
+```
+  // 此处加点文字，防止排版错误：因为这是代码块内的代码。使用时可删除
+
+- 支持表格
+
+    |文字|文字|
+    |-|-|
+    |文字|文字|
