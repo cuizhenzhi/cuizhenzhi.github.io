@@ -23,11 +23,11 @@
 }
 
 .spoiler.collapsed .spoiler-title:before {
-    content: "展开: ";
+    content: "点击展开: ";
 }
 
 .spoiler.expanded .spoiler-title:before {
-    content: "收起: ";
+    content: "点击收起: ";
 }
 
 .spoiler .spoiler-content {
