@@ -1,0 +1,20 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
+@font-face {
+    /* 为载入的字体取名字(随意) */
+    font-family: 'YSHST';
+    /* 字体文件地址(相对或者绝对路径都可以) */
+    src: url(/优设好身体.woff2);
+    /* 定义加粗样式(加粗多少) */
+    font-weight: normal;
+    /* 定义字体样式(斜体/非斜体) */
+    font-style: normal;
+    /* 定义显示样式 */
+    font-display: block;
+}
+
+@font-face {
+    font-family: ZhuZiAYuanJWD;
+    src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);
+    font-display: swap;
+
+}<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
