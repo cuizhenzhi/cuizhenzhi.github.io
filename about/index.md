@@ -1,5 +1,9 @@
 ---
-title: categories
-date: 2023-07-29 22:14:37
-type: about
+title: 关于
+date: 2021-03-30 15:57:51
+aside: false
+top_img: false
+background: "#f8f9fe"
+comments: false
+type: "about"
 ---
