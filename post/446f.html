@@ -1,0 +1,1378 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ChatTree: Learn Javascript with GPT4 | 真志的小站</title><meta name="author" content="Enoch Cui"><meta name="copyright" content="Enoch Cui"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="放心好了, 我会把整个代码一点一点放上来的, 因为太长了. &amp;#x2F;&amp;#x2F; &amp;#x3D;&amp;#x3D;UserScript&amp;#x3D;&amp;#x3D;&amp;#x2F;&amp;#x2F; @name              KeepChatGPT&amp;#x2F;&amp;#x2F; @description"><link rel="shortcut icon" href="https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/favicon-32x32.png"><link rel="canonical" href="https://www.czz9.top/post/446f.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":1000,"position":"top","messagePrev":"距离文章发布过去了","messageNext":"天哦~ 内容仅供参考, 不做建议"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ChatTree: Learn Javascript with GPT4',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-08-27 19:38:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><!-- script(src="https://cdn.jsdelivr.net/gh/radium-bit/res@master/live2d/autoload.js" async)--><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#49b1f5')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="https://www.czz9.top/static/custom.css"><link rel="stylesheet" href="/font/font.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://picx.zhimg.com/v2-a9c966774c2d1f924a3ffe3fb85db199_1440w.jpg?source=172ae18b" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">13</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302')"><nav id="nav"><span id="blog-info"><a href="/" title="真志的小站"><span class="site-name">真志的小站</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">ChatTree: Learn Javascript with GPT4</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-08-27T06:06:07.000Z" title="Created 2023-08-27 14:06:07">2023-08-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-27T11:38:55.289Z" title="Updated 2023-08-27 19:38:55">2023-08-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">11k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>65min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="ChatTree: Learn Javascript with GPT4"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>放心好了, 我会把整个代码一点一点放上来的, 因为太长了.</p>
+<p>&#x2F;&#x2F; &#x3D;&#x3D;UserScript&#x3D;&#x3D;<br>&#x2F;&#x2F; @name              KeepChatGPT<br>&#x2F;&#x2F; @description       这是一款提高ChatGPT的数据安全能力和效率的插件。并且免费共享大量创新功能，如：自动刷新、保持活跃、数据安全、取消审计、克隆对话、言无不尽、净化首页、展示大屏、展示全屏、拦截跟踪、日新月异等。让我们的AI体验无比安全、顺畅、丝滑、高效、简洁。<br>&#x2F;&#x2F; @version           17.10<br>&#x2F;&#x2F; @author            xcanwin<br>&#x2F;&#x2F; @namespace         <a target="_blank" rel="noopener" href="https://github.com/xcanwin/KeepChatGPT/">https://github.com/xcanwin/KeepChatGPT/</a><br>&#x2F;&#x2F; @supportURL        <a target="_blank" rel="noopener" href="https://github.com/xcanwin/KeepChatGPT/">https://github.com/xcanwin/KeepChatGPT/</a></p>
+<p>&#x2F;&#x2F; @description:ar    هذا هو ملحق يعزز قدرات وكفاءة بيانات ChatGPT الأمان، ويشترك مجانًا في العديد من الميزات الابتكارية مثل: التحديث التلقائي، البقاء نشطًا، الأمان للبيانات، إلغاء التدقيق، استنساخ الحوار، إلقاء الأحرف، تنقية الصفحة الرئيسية، عرض الشاشة الكبيرة، عرض ملء الشاشة، اعتراض التتبع، التطور الدائم وغيرها.</p>
+<p>&#x2F;&#x2F; @description:bg    Това е добавка, която повишава способностите и ефективността на данните на ChatGPT за сигурност и безпасност и споделя множество иновативни функции безплатно, като: автоматично обновление, поддържане на активност, сигурност на данните, отмяна на одита, клониране на диалог, безкрайни символи, почистване на началната страница, голям екран, пълен екран, прехващане на проследяване, непрекъснато развитие и други.<br>&#x2F;&#x2F; @description:cs    Toto je doplněk zvyšující schopnosti a efektivitu zabezpečení dat u ChatGPT a sdílí mnoho inovativních funkcí zdarma, jako je automatické obnovení, udržování aktivity, zabezpečení dat, zrušení auditu, klonování konverzace, bezedné znaky, úprava úvodní stránky, zobrazení na velké obrazovce, zobrazení na celou obrazovku, blokování sledování, nepřetržitý vývoj a další.<br>&#x2F;&#x2F; @description:da    Dette er en tilføjelse, der forbedrer ChatGPT’s datasikkerhedsfunktioner og effektivitet og deler mange innovative funktioner gratis, såsom automatisk opdatering, aktivitetsbevaring, datasikkerhed, afbrydelse af revision, dialogkloning, uendelige tegn, rensning af startside, storskærmvisning, fuldskærmsvisning, sporingsinterception, konstant udvikling og mere.<br>&#x2F;&#x2F; @description:de    Dies ist ein Add-On, das die Datenschutzfunktionen und Effizienz von ChatGPT verbessert und viele innovative Funktionen kostenlos teilt, wie z. B. automatische Aktualisierung, Aktivitätserhaltung, Datensicherheit, Aufhebung der Prüfung, Klonen von Gesprächen, endlose Zeichen, Bereinigung der Startseite, Großbildanzeige, Vollbildanzeige, Tracking-Abfangen, kontinuierliche Entwicklung und mehr.<br>&#x2F;&#x2F; @description:el    Αυτό είναι ένα πρόσθετο που βελτιώνει τις δυνατότητες ασφάλειας και αποτελεσματικότητας των δεδομένων του ChatGPT και μοιράζεται πολλά καινοτόμα χαρακτηριστικά δωρεάν, όπως αυτόματη ανανέωση, διατήρηση της ενεργότητας, ασφάλεια δεδομένων, ακύρωση ελέγχου, κλωνοποίηση συνομιλίας, απεριόριστους χαρακτήρες, καθαρισμός της αρχικής σελίδας, προβολή σε μεγάλη οθόνη, προβολή σε πλήρη οθόνη, παρεμβολή ιχνηλάτησης, συνεχής εξέλιξη και άλλα.<br>&#x2F;&#x2F; @description:en    This is an add-on that enhances ChatGPT’s data security capabilities and efficiency, sharing numerous innovative features for free, such as automatic refresh, activity preservation, data security, audit cancellation, conversation cloning, limitless characters, homepage purification, large screen display, full-screen display, tracking interception, ever-evolving, and more.<br>&#x2F;&#x2F; @description:eo    Ĉi tio estas aldonaĵo kiu plibonigas la datumsekurecan kapablecon kaj efikon de ChatGPT, kunhavigante multajn inovajn funkciojn senpage, ekzemple: aŭtomata refreŝigo, konservado de aktiveco, datumsekureco, nuligo de revizio, klonado de konversacio, senlimaj signoj, hejmpaĝa purigado, grandekrana montrado, tutskrana montrado, traksekvad-intercepto, ĉiam-evoluanta, kaj pli.<br>&#x2F;&#x2F; @description:es    Este es un complemento que mejora las capacidades de seguridad de datos de ChatGPT y la eficiencia, compartiendo numerosas características innovadoras de forma gratuita, como la actualización automática, preservación de actividad, seguridad de datos, cancelación de auditoría, clonación de conversaciones, caracteres ilimitados, purificación de la página de inicio, visualización en pantalla grande, visualización en pantalla completa, interceptación de seguimiento, en constante evolución y más.<br>&#x2F;&#x2F; @description:fi    Tämä on lisäosa, joka parantaa ChatGPT:n tietoturvakykyjä ja tehokkuutta, jakamalla lukuisia innovatiivisia ominaisuuksia ilmaiseksi, kuten automaattinen päivitys, toiminnan säilyttäminen, tietoturva, tarkastuksen peruutus, keskustelun kloonaus, rajattomat merkit, etusivun puhdistus, suuren näytön näyttö, kokoruutunäyttö, seurannan pysäytys, jatkuva kehittyminen ja enemmän.<br>&#x2F;&#x2F; @description:fr    Ceci est une extension qui améliore les capacités de sécurité des données de ChatGPT et l’efficacité, en partageant de nombreuses fonctionnalités innovantes gratuitement, telles que le rafraîchissement automatique, la préservation de l’activité, la sécurité des données, l’annulation de l’audit, le clonage de conversation, des caractères illimités, la purification de la page d’accueil, l’affichage en grand écran, l’affichage en plein écran, l’interception de suivi.<br>&#x2F;&#x2F; @description:fr-CA Ceci est une extension qui améliore les capacités de sécurité des données de ChatGPT et l’efficacité, en partageant de nombreuses fonctionnalités innovantes gratuitement, telles que le rafraîchissement automatique, la préservation de l’activité, la sécurité des données, l’annulation de l’audit, le clonage de conversation, des caractères illimités, la purification de la page d’accueil, l’affichage en grand écran, l’affichage en plein écran, l’interception de suivi.<br>&#x2F;&#x2F; @description:he    זוהי תוספת המשפרת את יכולות האבטחה והיעילות של ChatGPT ומשתפת מגוון רחב של תכונות חדשניות בחינם, כמו רענון אוטומטי, שמירת פעילות, אבטחת נתונים, ביטול ניתוח, שכפול שיחה, תווים ללא הגבלה, טיהור דף הבית, הצגה במסך גדול, הצגה במסך מלא, לכידת מעקב, תפוקה מתמידה ועוד.<br>&#x2F;&#x2F; @description:hu    Ez egy bővítmény, amely javítja a ChatGPT adatbiztonsági képességeit és hatékonyságát, ingyenesen megosztva számos innovatív funkciót, mint például az automatikus frissítés, az aktivitás megőrzése, az adatbiztonság, az ellenőrzés visszavonása, a beszélgetés klónozása, a végtelen karakterek, a kezdőlap tisztítása, a nagy képernyős megjelenítés, a teljes képernyős megjelenítés, a követés elfogása, folyamatos fejlődés és még sok más.<br>&#x2F;&#x2F; @description:id    Ini adalah tambahan yang meningkatkan kemampuan keamanan data ChatGPT dan efisiensi, berbagi banyak fitur inovatif secara gratis, seperti pembaruan otomatis, pelestarian aktivitas, keamanan data, pembatalan audit, kloning percakapan, karakter tak terbatas, penyucian beranda, tampilan layar besar, tampilan layar penuh, penyadapan pelacakan, perkembangan terus-menerus, dan lainnya.<br>&#x2F;&#x2F; @description:it    Questo è un componente aggiuntivo che migliora le capacità di sicurezza dei dati di ChatGPT e l’efficienza, condividendo numerose funzionalità innovative gratuitamente, come l’aggiornamento automatico, la conservazione dell’attività, la sicurezza dei dati, l’annullamento dell’audit, il clonaggio delle conversazioni, caratteri illimitati, la purificazione della home page, la visualizzazione su schermo grande, la visualizzazione a schermo intero, l’intercettazione del tracciamento.<br>&#x2F;&#x2F; @description:ja    これはChatGPTのデータセキュリティ能力と効率を向上させるアドオンであり、自動リフレッシュ、アクティビティの保持、データセキュリティ、監査キャンセル、会話のクローン、無制限の文字、ホームページの浄化、大画面表示、フルスクリーン表示、トラッキングのインターセプトなどの革新的な機能を無料で共有しています。絶え間なく進化し続けます。<br>&#x2F;&#x2F; @description:ka    ეს არის დამატება, რომელიც გაუზრდება ChatGPT-ის მონაცემთა უსაფრთხოების შესაძლებლობებს და ეფექტურობას და გაუთავისუფლებს უკავშირის რაოდენობებს უფასოდ, როგორიცაა: ავტომატური განახლება, საქმიანობის შენახვა, მონაცემთა უსაფრთხოება, აუდიტის გაუქმება, საუზმე კონტაქტის კლონი, ულიმიტო სიმბოლოები, მთავარი გვერდის გაწმენდა, დიდ ეკრანზე ჩვენება, სრული ეკრანზე ჩვენება, ტრეკინგის წამი, საუკეთესო განვითარება და სხვა.<br>&#x2F;&#x2F; @description:ko    이것은 ChatGPT의 데이터 보안 기능과 효율성을 향상시키는 애드온으로, 자동 새로 고침, 활동 보존, 데이터 보안, 감사 취소, 대화 복제, 무제한 문자, 홈페이지 정화, 대형 화면 표시, 전체 화면 표시, 추적 가로채기 등의 혁신적인 기능을 무료로 공유합니다. 끊임없이 진화하며 더 많은 기능을 제공합니다.<br>&#x2F;&#x2F; @description:nb    Dette er en tilleggsfunksjon som forbedrer ChatGPTs datasikkerhetsevner og effektivitet, og deler mange innovative funksjoner gratis, som automatisk oppdatering, aktivitetsbevaring, datasikkerhet, opphevelse av revisjon, samtalekloning, ubegrensede tegn, hjemmeside-rengjøring, visning på storskjerm, fullskjermvisning, sporingssperre, kontinuerlig utvikling og mer.<br>&#x2F;&#x2F; @description:nl    Dit is een add-on die de gegevensbeveiligingsmogelijkheden en efficiëntie van ChatGPT verbetert en tal van innovatieve functies gratis deelt, zoals automatische vernieuwing, activiteitenbehoud, gegevensbeveiliging, annulering van audit, gespreksklonering, onbeperkte tekens, homepage zuivering, grootschermweergave, volledig schermweergave, tracking onderschepping, voortdurende evolutie en meer.<br>&#x2F;&#x2F; @description:pl    To dodatek, który poprawia zdolności zabezpieczeń danych w ChatGPT oraz efektywność, udostępniając wiele innowacyjnych funkcji za darmo, takich jak automatyczne odświeżanie, zachowanie aktywności, bezpieczeństwo danych, anulowanie audytu, klonowanie rozmowy, nieograniczone znaki, oczyszczanie strony głównej, wyświetlanie na dużym ekranie, wyświetlanie na pełnym ekranie, przechwytywanie śledzenia, nieustanny rozwój i więcej.<br>&#x2F;&#x2F; @description:pt-BR Este é um complemento que melhora as capacidades de segurança de dados do ChatGPT e a eficiência, compartilhando inúmeras características inovadoras gratuitamente, como atualização automática, preservação de atividade, segurança de dados, cancelamento de auditoria, clonagem de conversas, caracteres ilimitados, purificação da página inicial, exibição em tela grande, exibição em tela cheia, interceptação de rastreamento, evolução constante e mais.<br>&#x2F;&#x2F; @description:ro    Acesta este un modul care îmbunătățește capacitățile de securitate a datelor pentru ChatGPT și eficiența, partajând numeroase funcționalități inovatoare gratuit, cum ar fi reîmprospătarea automată, păstrarea activității, securitatea datelor, anularea auditului, clonarea conversației, caractere nelimitate, purificarea paginii de start, afișarea pe ecran mare, afișarea pe tot ecranul, interceptarea urmăririi, evoluție continuă și multe altele.<br>&#x2F;&#x2F; @description:ru    Это дополнение, повышающее способности к защите данных ChatGPT и эффективности, бесплатно предоставляющее множество инновационных функций, таких как автоматическое обновление, сохранение активности, защита данных, отмена аудита, клонирование диалога, неограниченные символы, очистка домашней страницы, отображение на большом экране, полноэкранный режим, перехват отслеживания, непрерывное развитие и многое другое.<br>&#x2F;&#x2F; @description:sk    Toto je doplnok, ktorý zlepšuje schopnosti zabezpečenia údajov ChatGPT a efektívnosť, zdieľa množstvo inovatívnych funkcií zdarma, ako automatické obnovenie, zachovanie aktivity, bezpečnosť údajov, zrušenie auditu, klonovanie konverzácie, neobmedzené znaky, vyčistenie úvodnej stránky, zobrazenie na veľkom displeji, zobrazenie na celú obrazovku, odchyt sledovania, neustály vývoj a viac.<br>&#x2F;&#x2F; @description:sr    Ovo je dodatak koji poboljšava mogućnosti bezbednosti podataka u ChatGPT i efikasnost, deleći brojne inovativne funkcije besplatno, kao što su automatsko osvežavanje, očuvanje aktivnosti, bezbednost podataka, otkazivanje revizije, kloniranje razgovora, neograničeni znakovi, pročišćavanje početne stranice, prikaz na velikom ekranu, prikaz na celom ekranu, presretanje praćenja, neprestani razvoj i više.<br>&#x2F;&#x2F; @description:sv    Detta är en tillägg som förbättrar ChatGPT: s dataskyddsfunktioner och effektivitet, och delar många innovativa funktioner gratis, som automatisk uppdatering, aktivitetsbevarande, dataskydd, återkallande av granskning, kloning av samtal, obegränsade tecken, rening av startsidan, stor skärmvisning, helskärmsvisning, spårningsavlyssning, ständig utveckling och mer.<br>&#x2F;&#x2F; @description:th    นี่คือส่วนเสริมที่เสริมสร้างความสามารถในเรื่องการรักษาความปลอดภัยของข้อมูล ChatGPT และประสิทธิภาพ โดยแบ่งปันฟีเจอร์นวัตกรรมหลากหลายฟรี เช่น การรีเฟรชอัตโนมัติ การรักษาความเคลื่อนไหว การรักษาความปลอดภัยข้อมูล การยกเลิกการตรวจสอบ การทำซ้ำของบทสนทนา อักขระไม่จำกัด การทำความสะอาดหน้าโฮมเพจ การแสดงบนหน้าจอขนาดใหญ่ การแสดงบนหน้าจอเต็มหน้าจอ การแอบดักการติดตาม การเจริญเติบโตอยู่เสมอ และอื่น ๆ<br>&#x2F;&#x2F; @description:tr    Bu, ChatGPT’nin veri güvenliği yeteneklerini ve verimliliğini artıran, otomatik yenileme, etkinlik koruma, veri güvenliği, denetim iptali, konuşma klonlama, sınırsız karakter, ana sayfa temizleme, büyük ekran gösterimi, tam ekran gösterimi, izleme engelleme gibi birçok yenilikçi özelliği ücretsiz paylaşan bir eklentidir. Sürekli gelişim ve daha fazlası.<br>&#x2F;&#x2F; @description:uk    Це додаток, який покращує можливості забезпечення безпеки даних у ChatGPT та ефективність, поділяючи безкоштовно численні інноваційні функції, такі як автоматичне оновлення, збереження активності, безпека даних, скасування аудиту, клонування розмови, необмежені символи, очищення домашньої сторінки, відображення на великому екрані, відображення на повному екрані, перехоплення відстеження, постійний розвиток та багато іншого.<br>&#x2F;&#x2F; @description:ug    بۇ، ChatGPT داتا تىنېلەش كۈچلىرىنى ۋە تەۋسىيەلىكىنى يۇقىرىلاشقان بىر قوشما، ئاپتوماتىك تىزىملاش، پائالىيەت ساقلاش، داتا تىنېشلىتىش، تۆۋەندۇرۇش تىكلىپىنى بىكارلاش، سېنىمىسىز بەلگەلەر، باش بەت ئارىلىقتا تازىلاش، چوڭ كۆرۈش دىسپىلى نۇمايىش، پۈتۈن ئېكران نۇمايىش، داپتىراق ئىزلەش، دائىمىي ئىشلەتكۈچى قوشمىسى، ۋە باشقا كۆپ مەزمۇننى بەلگىلەپ بېرىدۇ.<br>&#x2F;&#x2F; @description:vi    Đây là một tiện ích bổ sung cải thiện khả năng bảo mật dữ liệu của ChatGPT và hiệu suất, chia sẻ nhiều tính năng đổi mới miễn phí, như làm mới tự động, bảo tồn hoạt động, bảo mật dữ liệu, hủy kiểm toán, sao chép cuộc trò chuyện, ký tự không giới hạn, làm sạch trang chủ, hiển thị trên màn hình lớn, hiển thị toàn màn hình, chặn theo dõi và phát triển liên tục và hơn nữa.<br>&#x2F;&#x2F; @description:zh-CN 这是一款提高ChatGPT的数据安全能力和效率的插件。并且免费共享大量创新功能，如：自动刷新、保持活跃、数据安全、取消审计、克隆对话、言无不尽、净化首页、展示大屏、展示全屏、拦截跟踪、日新月异等。让我们的AI体验无比安全、顺畅、丝滑、高效、简洁。<br>&#x2F;&#x2F; @description:zh-TW 這是一個增強ChatGPT數據安全能力和效率的插件。並且免費共享各種創新功能，如：自動刷新、活動持久、數據安全、取消審計、會話克隆、無限對話、主頁整理、大屏幕展示、全屏展示、追踪攔截、持續更新等。讓我們體驗智能、安全、無縫、高效、簡潔的AI。</p>
+<p>&#x2F;&#x2F; @icon              data:image&#x2F;svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" stroke-width="2" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><br>&#x2F;&#x2F; @license           GPL-2.0-only<br>&#x2F;&#x2F; @match             <a target="_blank" rel="noopener" href="https://chat.openai.com/">https://chat.openai.com/</a>*<br>&#x2F;&#x2F; @grant             GM_addStyle<br>&#x2F;&#x2F; @grant             GM_addElement<br>&#x2F;&#x2F; @grant             GM_setValue<br>&#x2F;&#x2F; @grant             GM_getValue<br>&#x2F;&#x2F; @grant             unsafeWindow<br>&#x2F;&#x2F; @run-at            document-body<br>&#x2F;&#x2F; @noframes</p>
+<p>&#x2F;&#x2F; &#x3D;&#x3D;&#x2F;UserScript&#x3D;&#x3D;</p>
+<p>(function() {<br>‘use strict’;</p>
+<pre><code>var global = &#123;&#125;;
+
+const $ = (Selector, el) =&gt; (el || document).querySelector(Selector);
+const $$ = (Selector, el) =&gt; (el || document).querySelectorAll(Selector);
+
+const u = `/api/$&#123;GM_info.script.namespace.slice(33, 34)&#125;uth/s$&#123;GM_info.script.namespace.slice(28, 29)&#125;ssion`;
+const symbol1_selector = &#39;nav.flex .transition-colors&#39;;
+const symbol2_selector = &#39;button.justify-center .sr-only&#39;;
+
+const datasec_blocklist_default = &quot;18888888888\nhttps://公司域名.com\n银行卡号\n([\\w-]+(\\.[\\w-]+)*)@163\.com\n&quot;;
+
+const getLang = function() &#123;
+    let lang = `
+</code></pre>
+<p>{<br>“index”: {“暗色主题”: “dm”, “显示调试”: “sd”, “取消审计”: “cm”, “取消动画”: “ca”, “关于”: “ab”, “建议间隔50秒”: “si”, “调整间隔”: “mi”, “检查更新”: “cu”, “当前版本”: “cv”, “发现最新版”: “dl”, “已是最新版”: “lv”, “克隆对话”: “cc”, “净化页面”: “pp”, “展示大屏”: “ls”, “展示全屏”: “fs”, “言无不尽”: “sc”, “拦截跟踪”: “it”, “日新月异”: “ec”, “赞赏鼓励”: “ap”, “警告”: “wn”, “数据安全”: “ds”, “发现敏感数据”: “dd”, “使用正则编写规则”: “rr”},<br>“local”: {<br>“ar”: {“dm”: “الوضع الداكن”, “sd”: “إظهار التصحيح”, “cm”: “إلغاء التدقيق”, “ca”: “إلغاء الرسوم المتحركة”, “ab”: “حول”, “si”: “اقتراح فاصل زمني 50 ثانية”, “mi”: “تعديل الفاصل”, “cu”: “التحقق من التحديثات”, “cv”: “الإصدار الحالي”, “dl”: “اكتشف أحدث إصدار”, “lv”: “أحدث إصدار”, “cc”: “استنساخ المحادثة”, “pp”: “تنقية الصفحة”, “ls”: “عرض الشاشة الكبيرة”, “fs”: “عرض بملء الشاشة”, “sc”: “تحدث بشكل كامل”, “it”: “اعتراض التتبع”, “ec”: “التغير المستمر”, “ap”: “تقدير”, “wn”: “تحذير”, “ds”: “أمان البيانات”, “dd”: “اكتشف البيانات الحساسة”, “rr”: “استخدم الريجكس لكتابة القواعد”},<br>“bg”: {“dm”: “Тъмна тема”, “sd”: “Показване на отстраняване на грешки”, “cm”: “Отказ от одит”, “ca”: “Отмяна на анимацията”, “ab”: “За”, “si”: “Предложете интервал от 50 секунди”, “mi”: “Промяна на интервала”, “cu”: “Проверка на актуализации”, “cc”: “Клониране на разговора”, “pp”: “Почистване на страницата”, “ls”: “Показване на голям екран”, “fs”: “Показване на цял екран”, “sc”: “Говорете пълно”, “it”: “Прихващане на проследяването”, “ec”: “Непрекъснато променящ се”, “ap”: “Оценка”, “wn”: “Предупреждение”, “ds”: “Сигурност на данните”, “dd”: “Откриване на чувствителни данни”, “rr”: “Използвайте регулярни изрази за съставяне на правила”},<br>“cs”: {“dm”: “Tmavý režim”, “sd”: “Zobrazit ladění”, “cm”: “Zrušení auditu”, “ca”: “Zrušit animaci”, “ab”: “O”, “si”: “Navrhnout interval 50 sekund”, “mi”: “Upravit interval”, “cu”: “Kontrola aktualizací”, “cc”: “Klonovat konverzaci”, “pp”: “Očistit stránku”, “ls”: “Zobrazení velkého displeje”, “fs”: “Zobrazit na celou obrazovku”, “sc”: “Mluvte úplně”, “it”: “Zachytávání sledování”, “ec”: “Neustále se měnící”, “ap”: “Ocenění”, “wn”: “Varování”, “ds”: “Bezpečnost dat”, “dd”: “Detekce citlivých dat”, “rr”: “Použijte regulární výrazy pro psaní pravidel”},<br>“da”: {“dm”: “Mørk tilstand”, “sd”: “Vis fejlfinding”, “cm”: “Annuller revision”, “ca”: “Annuller animation”, “ab”: “Om”, “si”: “Forslag interval på 50 sekunder”, “mi”: “Ændre interval”, “cu”: “Tjek for opdateringer”, “cc”: “Klon samtalen”, “pp”: “Rensning af siden”, “ls”: “Vis stor skærm”, “fs”: “Vis i fuld skærm”, “sc”: “Fuldfør udtalelsen”, “it”: “Interceptor sporing”, “ec”: “Konstant forandring”, “ap”: “Værdssættelse”, “wn”: “Advarsel”, “ds”: “Datasikkerhed”, “dd”: “Opdage følsomme data”, “rr”: “Brug regex til at skrive regler”},<br>“de”: {“dm”: “Dunkler Modus”, “sd”: “Fehlerbehebung anzeigen”, “cm”: “Prüfung abbrechen”, “ca”: “Animation abbrechen”, “ab”: “Über”, “si”: “Vorschlag für Intervall von 50 Sekunden”, “mi”: “Intervall bearbeiten”, “cu”: “Überprüfung auf Updates”, “cv”: “Aktuelle Version”, “dl”: “Entdecken Sie die neueste Version”, “lv”: “ist die neueste Version”, “cc”: “Konversation klonen”, “pp”: “Seite bereinigen”, “ls”: “Großen Bildschirm anzeigen”, “fs”: “Vollbild anzeigen”, “sc”: “Sprich vollständig”, “it”: “Tracking abfangen”, “ec”: “Ständiger Wandel”, “ap”: “Wertschätzung”, “wn”: “Warnung”, “ds”: “Datensicherheit”, “dd”: “Entdeckung sensibler Daten”, “rr”: “Verwenden Sie Regex, um Regeln zu schreiben”},<br>“el”: {“dm”: “Σκοτεινή θεματολογία”, “sd”: “Εμφάνιση αποσφαλμάτωσης”, “cm”: “Ακύρωση ελέγχου”, “ca”: “Ακύρωση κινούμενων σχεδίων”, “ab”: “Σχετικά με”, “si”: “Προτείνετε διάστημα 50 δευτερολέπτων”, “mi”: “Τροποποίηση διαστήματος”, “cu”: “Έλεγχος ενημερώσεων”, “cc”: “Κλωνοποίηση συνομιλίας”, “pp”: “Καθαρισμός σελίδας”, “ls”: “Εμφάνιση μεγάλης οθόνης”, “fs”: “Εμφάνιση πλήρους οθόνης”, “sc”: “Ολοκλήρωσε την ομιλία”, “it”: “Ανίχνευση παρακολούθησης”, “ec”: “Αδιάκοπη αλλαγή”, “ap”: “Εκτίμηση”, “wn”: “Προειδοποίηση”, “ds”: “Ασφάλεια δεδομένων”, “dd”: “Ανακάλυψη ευαίσθητων δεδομένων”, “rr”: “Χρησιμοποιήστε regex για να γράψετε κανόνες”},<br>“en”: {“dm”: “Dark mode”, “sd”: “Show debugging”, “cm”: “Cancel audit”, “ca”: “Cancel animation”, “ab”: “About”, “si”: “Suggest interval of 50 seconds; The author usually sets 900”, “mi”: “Modify interval”, “cu”: “Check for updates”, “cv”: “Current version”, “dl”: “Discover the latest version”, “lv”: “is the latest version”, “cc”: “Conversation cloning”, “pp”: “Purified page”, “ls”: “Wide display mode”, “fs”: “Fullscreen mode”, “sc”: “Complete response”, “it”: “Intercept tracking”, “ec”: “More chat info”, “ap”: “Sponsor”, “wn”: “Warning”, “ds”: “Data security”, “dd”: “Discover sensitive data”, “rr”: “Use regex to write rules”},<br>“eo”: {“dm”: “Malhela moduso”, “sd”: “Montri depuradon”, “cm”: “Nuligi kontroli”, “ca”: “Nuligi animacion”, “ab”: “Pri”, “si”: “Sugesti intervalon de 50 sekundoj”, “mi”: “Modifi intervalon”, “cu”: “Kontroli ĝisdatigojn”, “cc”: “Kloni konversacion”, “pp”: “Pura paĝo”, “ls”: “Montri grandan ekrane”, “fs”: “Montri plenekranon”, “sc”: “Parolu plene”, “it”: “Intercepti Trakadon”, “ec”: “Ĉiam ŝanĝiĝanta”, “ap”: “Aprobo”, “wn”: “Averto”, “ds”: “Datensekureco”, “dd”: “Malkovru sensitivajn datumojn”, “rr”: “Uzu regulajn esprimojn por skribi regulojn”},<br>“es”: {“dm”: “Modo oscuro”, “sd”: “Mostrar depuración”, “cm”: “Cancelar auditoría”, “ca”: “Cancelar animación”, “ab”: “Acerca de”, “si”: “Sugerir un intervalo de 50 segundos”, “mi”: “Modificar intervalo”, “cu”: “Comprobar actualizaciones”, “cv”: “Versión actual”, “dl”: “Descubre la última versión”, “lv”: “es la última versión”, “cc”: “Clonar conversación”, “pp”: “Purificar página”, “ls”: “Mostrar pantalla grande”, “fs”: “Mostrar pantalla completa”, “sc”: “Termina tu discurso”, “it”: “Interceptar Rastreo”, “ec”: “Cambio constante”, “ap”: “Apreciación”, “wn”: “Advertencia”, “ds”: “Seguridad de datos”, “dd”: “Descubrir datos sensibles”, “rr”: “Usa regex para escribir reglas”},<br>“fi”: {“dm”: “Tumma tila”, “sd”: “Näytä virheenkorjaus”, “cm”: “Peruuta tarkistus”, “ca”: “Peruuta animaatio”, “ab”: “Tietoa”, “si”: “Ehdota 50 sekunnin väliaikaa”, “mi”: “Muokkaa väliä”, “cu”: “Tarkista päivitykset”, “cc”: “Kloonaa keskustelu”, “pp”: “Puhdista sivu”, “ls”: “Näytä suuri näyttö”, “fs”: “Näytä koko näyttö”, “sc”: “Puhu loppuun asti”, “it”: “Sieppaa seuranta”, “ec”: “Jatkuvasti muuttuva”, “ap”: “Arvostus”, “wn”: “Varoitus”, “ds”: “Tietoturva”, “dd”: “Löytää arkaluonteista dataa”, “rr”: “Käytä regexiä sääntöjen kirjoittamiseen”},<br>“fr”: {“dm”: “Mode sombre”, “sd”: “Afficher le débogage”, “cm”: “Annuler l’audit”, “ca”: “Annuler l’animation”, “ab”: “À propos de”, “si”: “Suggérer un intervalle de 50 secondes”, “mi”: “Modifier l’intervalle”, “cu”: “Vérifier les mises à jour”, “cv”: “Version actuelle”, “dl”: “Découvrir la dernière version”, “lv”: “est la dernière version”, “cc”: “Cloner la conversation”, “pp”: “Purifier la page”, “ls”: “Afficher grand écran”, “fs”: “Afficher en plein écran”, “sc”: “Parlez complètement”, “it”: “Interception de suivi”, “ec”: “En perpétuelle évolution”, “ap”: “Appréciation”, “wn”: “Avertissement”, “ds”: “Sécurité des données”, “dd”: “Découvrir des données sensibles”, “rr”: “Utilisez des regex pour écrire des règles”},<br>“fr-CA”: {“dm”: “Mode nuit”, “sd”: “Afficher le débogage”, “cm”: “Annuler la vérification”, “ca”: “Annuler l’animation”, “ab”: “À propos de”, “si”: “Suggérer un intervalle de 50 secondes”, “mi”: “Modifier l’intervalle”, “cu”: “Vérifier les mises à jour”, “cv”: “Version actuelle”, “dl”: “Découvrir la dernière version”, “lv”: “est la dernière version”, “cc”: “Cloner la conversation”, “pp”: “Purifier la page”, “ls”: “Afficher grand écran”, “fs”: “Afficher en plein écran”, “sc”: “Parlez complètement”, “it”: “Intercepter le suivi”, “ec”: “Évolution constante”, “ap”: “Appréciation”, “wn”: “Avertissement”, “ds”: “Sécurité des données”, “dd”: “Découvrir des données sensibles”, “rr”: “Utilisez des regex pour écrire des règles”},<br>“he”: {“dm”: “מצב כהה”, “sd”: “הצגת התיקון”, “cm”: “ביטול ביקורת”, “ca”: “בטל אנימציה”, “ab”: “אודות”, “si”: “הצע מרווח של 50 שניות”, “mi”: “שינוי מרווח”, “cu”: “בדיקת עדכונים”, “cc”: “שכפול שיחה”, “pp”: “טיהור הדף”, “ls”: “תצוגת מסך גדול”, “fs”: “הצג מסך מלא”, “sc”: “דבר במלואו”, “it”: “התערבות במעקב”, “ec”: “שינוי מתמיד”, “ap”: “הערכה”, “wn”: “אזהרה”, “ds”: “אבטחת מידע”, “dd”: “גילוי נתונים רגישים”, “rr”: “השתמש בביטויים רגולריים לכתיבת כללים”},<br>“hu”: {“dm”: “Sötét mód”, “sd”: “Hibakeresés mutatása”, “cm”: “Ellenőrzés megszüntetése”, “ca”: “Animáció törlése”, “ab”: “Rólunk”, “si”: “Javaslat 50 másodperces időközre”, “mi”: “Időköz módosítása”, “cu”: “Frissítések keresése”, “cc”: “Beszélgetés klónozása”, “pp”: “Oldal tisztítása”, “ls”: “Nagy képernyő megjelenítése”, “fs”: “Teljes képernyő megjelenítése”, “sc”: “Beszélj teljesen”, “it”: “Követés elfogása”, “ec”: “Folyamatos változás”, “ap”: “Elismerés”, “wn”: “Figyelmeztetés”, “ds”: “Adatbiztonság”, “dd”: “Érzékeny adatok felfedezése”, “rr”: “Használja a regex-et a szabályok írásához”},<br>“id”: {“dm”: “Mode gelap”, “sd”: “Tampilkan debugging”, “cm”: “Batalkan audit”, “ca”: “Batalkan animasi”, “ab”: “Tentang”, “si”: “Sarankan interval 50 detik”, “mi”: “Modifikasi interval”, “cu”: “Periksa Pembaruan”, “cc”: “Klon percakapan”, “pp”: “Membersihkan halaman”, “ls”: “Tampilkan layar besar”, “fs”: “Tampilkan layar penuh”, “sc”: “Berbicara secara lengkap”, “it”: “Intersepsi Pelacakan”, “ec”: “Perubahan terus-menerus”, “ap”: “Penghargaan”, “wn”: “Peringatan”, “ds”: “Keamanan data”, “dd”: “Temukan data sensitif”, “rr”: “Gunakan regex untuk menulis aturan”},<br>“it”: {“dm”: “Modalità scura”, “sd”: “Mostra debug”, “cm”: “Annulla verifica”, “ca”: “Annulla animazione”, “ab”: “Riguardo a”, “si”: “Suggerisci un intervallo di 50 secondi”, “mi”: “Modifica intervallo”, “cu”: “Verifica aggiornamenti”, “cv”: “Versione attuale”, “dl”: “Scopri l’ultima versione”, “lv”: “è l’ultima versione”, “cc”: “Clona conversazione”, “pp”: “Purifica pagina”, “ls”: “Mostra grande schermo”, “fs”: “Mostra a schermo intero”, “sc”: “Parla completamente”, “it”: “Intercettare il tracciamento”, “ec”: “Cambiamento costante”, “ap”: “Apprezzamento”, “wn”: “Avvertimento”, “ds”: “Sicurezza dei dati”, “dd”: “Scoprire dati sensibili”, “rr”: “Usa regex per scrivere regole”},<br>“ja”: {“dm”: “ダークモード”, “sd”: “デバッグを表示”, “cm”: “監査をキャンセル”, “ca”: “アニメーションのキャンセル”, “ab”: “について”, “si”: “50秒間隔を提案する”, “mi”: “間隔を変更する”, “cu”: “更新をチェックする”, “cv”: “現在のバージョン”, “dl”: “最新バージョンを発見する”, “lv”: “最新バージョンです”, “cc”: “会話をクローンする”, “pp”: “ページを浄化する”, “ls”: “ビッグスクリーンを表示する”, “fs”: “フルスクリーン表示”, “sc”: “完全に話してください”, “it”: “トラッキングの傍受”, “ec”: “絶え間ない変化”, “ap”: “評価”, “wn”: “警告”, “ds”: “データセキュリティ”, “dd”: “機密データを発見する”, “rr”: “正規表現を使用してルールを書く”},<br>“ka”: {“dm”: “ბნელი რეჟიმი”, “sd”: “გამოჩენა დებაგი”, “cm”: “ანულირება აუდიტი”, “ca”: “ანიმაციის გაუქმება”, “ab”: “შესახებ”, “si”: “50 წამის ინტერვალის შეტანა”, “mi”: “ინტერვალის შეცვლა”, “cu”: “განახლებების შემოწმება”, “cc”: “კონვერსაციის კლონირება”, “pp”: “გვერდის გაწმენდა”, “ls”: “დიდი ეკრანის გამოსახულება”, “fs”: “მთელი ეკრანის ჩვენება”, “sc”: “სრულად ილაპარაკეთ”, “it”: “თვალყური მისმართავა”, “ec”: “მუდმივი ცვლილება”, “ap”: “შეფასება”, “wn”: “გაფრთხილება”, “ds”: “მონაცემთა უსაფრთხოება”, “dd”: “საკითხავი მონაცემების გამოცნობა”, “rr”: “გამოიყენეთ regex წესების დაწერად”},<br>“ko”: {“dm”: “다크 모드”, “sd”: “디버깅 표시”, “cm”: “감사 취소”, “ca”: “애니메이션 취소”, “ab”: “관하여”, “si”: “50초 간격 건의”, “mi”: “간격 수정”, “cu”: “업데이트 확인”, “cv”: “현재 버전”, “dl”: “최신 버전 찾기”, “lv”: “최신 버전입니다.”, “cc”: “대화 복제”, “pp”: “페이지 정화”, “ls”: “큰 화면 표시”, “fs”: “전체 화면 표시”, “sc”: “완전히 말하세요”, “it”: “추적 가로채기”, “ec”: “끊임없는 변화”, “ap”: “감사”, “wn”: “경고”, “ds”: “데이터 보안”, “dd”: “민감한 데이터 발견”, “rr”: “정규 표현식을 사용하여 규칙 작성”},<br>“nb”: {“dm”: “Mørk modus”, “sd”: “Vis feilsøking”, “cm”: “Avbryt revisjonen”, “ca”: “Avbryt animasjon”, “ab”: “Om”, “si”: “Forslag om et intervall på 50 sekunder”, “mi”: “Endre intervall”, “cu”: “Sjekk etter oppdateringer”, “cc”: “Klon samtalen”, “pp”: “Rens side”, “ls”: “Vis stor skjerm”, “fs”: “Vis i fullskjerm”, “sc”: “Snakk fullstendig”, “it”: “Intercept sporing”, “ec”: “Kontinuerlig endring”, “ap”: “Verdsatt”, “wn”: “Advarsel”, “ds”: “Datasikkerhet”, “dd”: “Oppdage sensitiv data”, “rr”: “Bruk regex for å skrive regler”},<br>“nl”: {“dm”: “Donkere modus”, “sd”: “Foutopsporing weergeven”, “cm”: “Controle annuleren”, “ca”: “Animatie annuleren”, “ab”: “Over”, “si”: “Stel een interval van 50 seconden voor”, “mi”: “Interval wijzigen”, “cu”: “Controleren op updates”, “cc”: “Gesprek klonen”, “pp”: “Pagina zuiveren”, “ls”: “Groot scherm weergeven”, “fs”: “Volledig scherm weergeven”, “sc”: “Spreek volledig uit”, “it”: “Onderscheppen van tracking”, “ec”: “Voortdurende verandering”, “ap”: “Waardering”, “wn”: “Waarschuwing”, “ds”: “Gegevensbeveiliging”, “dd”: “Gevoelige gegevens ontdekken”, “rr”: “Gebruik regex om regels te schrijven”},<br>“pl”: {“dm”: “Tryb ciemny”, “sd”: “Pokaż debugowanie”, “cm”: “Anuluj audyt”, “ca”: “Anuluj animację”, “ab”: “O”, “si”: “Zasugeruj interwał 50 sekund”, “mi”: “Zmień interwał”, “cu”: “Sprawdź aktualizacje”, “cc”: “Klonuj rozmowę”, “pp”: “Oczyść stronę”, “ls”: “Wyświetl duży ekran”, “fs”: “Wyświetl pełny ekran”, “sc”: “Mów całkowicie”, “it”: “Przechwytywanie śledzenia”, “ec”: “Ciągłe zmiany”, “ap”: “Docenienie”, “wn”: “Ostrzeżenie”, “ds”: “Bezpieczeństwo danych”, “dd”: “Wykrywanie wrażliwych danych”, “rr”: “Użyj regex do pisania reguł”},<br>“pt-BR”: {“dm”: “Modo escuro”, “sd”: “Mostrar depuração”, “cm”: “Cancelar auditoria”, “ca”: “Cancelar animação”, “ab”: “Sobre”, “si”: “Sugira um intervalo de 50 segundos”, “mi”: “Modificar intervalo”, “cu”: “Verificar atualizações”, “cc”: “Clonar conversa”, “pp”: “Purificar página”, “ls”: “Exibir tela grande”, “fs”: “Exibir em tela cheia”, “sc”: “Fale completamente”, “it”: “Interceptar Rastreamento”, “ec”: “Mudança constante”, “ap”: “Apreciação”, “wn”: “Aviso”, “ds”: “Segurança de dados”, “dd”: “Descobrir dados sensíveis”, “rr”: “Use regex para escrever regras”},<br>“ro”: {“dm”: “Mod întunecat”, “sd”: “Afișare depanare”, “cm”: “Anulare audit”, “ca”: “Anulare animație”, “ab”: “Despre”, “si”: “Sugerați un interval de 50 secunde”, “mi”: “Modificați intervalul”, “cu”: “Verifică actualizări”, “cc”: “Clonează conversația”, “pp”: “Purificare pagină”, “ls”: “Afișare ecran mare”, “fs”: “Afișare pe tot ecranul”, “sc”: “Vorbiți complet”, “it”: “Interceptarea urmăririi”, “ec”: “Schimbare continuă”, “ap”: “Apreciere”, “wn”: “Avertizare”, “ds”: “Securitatea datelor”, “dd”: “Descoperirea datelor sensibile”, “rr”: “Folosiți regex pentru a scrie reguli”},<br>“ru”: {“dm”: “Темный режим”, “sd”: “Показать отладку”, “cm”: “Отменить аудит”, “ca”: “Отменить анимацию”, “ab”: “О”, “si”: “Предложить интервал в 50 секунд”, “mi”: “Изменить интервал”, “cu”: “Проверить обновления”, “cc”: “Клонировать диалог”, “pp”: “Очистить страницу”, “ls”: “Показать большой экран”, “fs”: “Показать на полный экран”, “sc”: “Говорите полностью”, “it”: “Перехват отслеживания”, “ec”: “Постоянное изменение”, “ap”: “Признательность”, “wn”: “Предупреждение”, “ds”: “Безопасность данных”, “dd”: “Обнаружение конфиденциальных данных”, “rr”: “Используйте регулярные выражения для написания правил”},<br>“sk”: {“dm”: “Tmavý režim”, “sd”: “Zobraziť ladenie”, “cm”: “Zrušiť audit”, “ca”: “Zrušiť animáciu”, “ab”: “O”, “si”: “Navrhnúť interval 50 sekúnd”, “mi”: “Zmena intervalu”, “cu”: “Kontrola aktualizácií”, “cc”: “Klonovať konverzáciu”, “pp”: “Očistiť stránku”, “ls”: “Zobraziť veľkú obrazovku”, “fs”: “Zobraziť na celú obrazovku”, “sc”: “Hovorte úplne”, “it”: “Zachytenie sledovania”, “ec”: “Neustále sa meniace”, “ap”: “Ocenenie”, “wn”: “Varovanie”, “ds”: “Bezpečnosť údajov”, “dd”: “Objavenie citlivých dát”, “rr”: “Použite regex na písanie pravidiel”},<br>“sr”: {“dm”: “Тамни режим”, “sd”: “Прикажи отклањање грешака”, “cm”: “Откажи ревизију”, “ca”: “Откажи анимацију”, “ab”: “О”, “si”: “Predložiti interval od 50 sekundi”, “mi”: “Измена интервала”, “cu”: “Provera ažuriranja”, “cc”: “Клонирај разговор”, “pp”: “Прочисти страницу”, “ls”: “Прикажи велики екран”, “fs”: “Прикажи на целом екрану”, “sc”: “Говорите у потпуности”, “it”: “Пресретање праћења”, “ec”: “Непрестана промена”, “ap”: “Поштовање”, “wn”: “Упозорење”, “ds”: “Сигурност података”, “dd”: “Откривање осетљивих података”, “rr”: “Користите регуларне изразе за писање правила”},<br>“sv”: {“dm”: “Mörkt läge”, “sd”: “Visa felsökning”, “cm”: “Avbryt revision”, “ca”: “Avbryt animation”, “ab”: “Om”, “si”: “Föreslå intervall på 50 sekunder”, “mi”: “Ändra intervall”, “cu”: “Kontrollera uppdateringar”, “cc”: “Klonar samtal”, “pp”: “Rensa sidan”, “ls”: “Visa stor skärm”, “fs”: “Visa i helskärm”, “sc”: “Tala helt klart”, “it”: “Interceptera spårning”, “ec”: “Ständig förändring”, “ap”: “Uppskattning”, “wn”: “Varning”, “ds”: “Datasäkerhet”, “dd”: “Upptäcka känslig data”, “rr”: “Använd regex för att skriva regler”},<br>“th”: {“dm”: “โหมดมืด”, “sd”: “แสดงการแก้ไขข้อผิดพลาด”, “cm”: “ยกเลิกการตรวจสอบ”, “ca”: “ยกเลิกการเคลื่อนไหว”, “ab”: “เกี่ยวกับ”, “si”: “เสนอช่วงเวลา 50 วินาที”, “mi”: “แก้ไขระยะห่าง”, “cu”: “ตรวจสอบการอัปเดต”, “cc”: “โคลนสนทนา”, “pp”: “ทำความสะอาดหน้า”, “ls”: “แสดงหน้าจอใหญ่”, “fs”: “แสดงแบบเต็มหน้าจอ”, “sc”: “พูดคุยให้เสร็จสิ้น”, “it”: “การดักจับการติดตาม”, “ec”: “การเปลี่ยนแปลงตลอดเวลา”, “ap”: “การประเมินค่า”, “wn”: “คำเตือน”, “ds”: “ความปลอดภัยของข้อมูล”, “dd”: “ค้นพบข้อมูลที่ละเอียดอ่อน”, “rr”: “ใช้ regex เพื่อเขียนกฎ”},<br>“tr”: {“dm”: “Karanlık mod”, “sd”: “Hata ayıklama göster”, “cm”: “Denetimi İptal Et”, “ca”: “Animasyonu iptal et”, “ab”: “Hakkında”, “si”: “50 saniyelik aralık önerin”, “mi”: “Aralığı değiştir”, “cu”: “Güncelleştirmeleri kontrol et”, “cc”: “Sohbeti kopyala”, “pp”: “Sayfayı temizle”, “ls”: “Büyük ekranı görüntüle”, “fs”: “Tam ekran görüntüle”, “sc”: “Tamamlayın konuşmayı”, “it”: “İzlemeyi Engellemek”, “ec”: “Sürekli değişim”, “ap”: “Takdir”, “wn”: “Uyarı”, “ds”: “Veri güvenliği”, “dd”: “Hassas verileri keşfetmek”, “rr”: “Kuralları yazmak için regex kullanın”},<br>“uk”: {“dm”: “Темний режим”, “sd”: “Показати налагодження”, “cm”: “Скасувати аудит”, “ca”: “Скасувати анімацію”, “ab”: “Про”, “si”: “Запропонуйте інтервал у 50 секунд”, “mi”: “Змінити інтервал”, “cu”: “Перевірити оновлення”, “cc”: “Клонувати діалог”, “pp”: “Очистити сторінку”, “ls”: “Відобразити великий екран”, “fs”: “Показати на повний екран”, “sc”: “Говоріть повністю”, “it”: “Перехоплення відстеження”, “ec”: “Постійна зміна”, “ap”: “Вдячність”, “wn”: “Попередження”, “ds”: “Безпека даних”, “dd”: “Виявлення конфіденційних даних”, “rr”: “Використовуйте регулярні вирази для написання правил”},<br>“ug”: {“dm”: “تېما كۆرسىتىش”, “sd”: “كۆرسەتكەن يۇقىرىلاش”, “cm”: “ئەمەلدىن قالدۇرۇش”, “ca”: “ئېنىماتىكىنى بىكار قىلىش”, “ab”: “ئۇچۇرلىق”, “si”: “50 سىكونتلىك ئارىلىقنى سۇنۇشتۇرۇش”, “mi”: “ئارىلىق ئۆزگەرتىش”, “cu”: “يېڭىلانما كۆزەت”, “cc”: “كۆپچەي ئىككىلىش”, “pp”: “چۈشۈرۈش بەت”, “ls”: “كۆرسىتىش چوڭ ئېكران”, “fs”: “تولانما پۈتۈن ئېكران”, “sc”: “تاماملا سۆزلىشىڭىز”, “it”: “قولايلىنىش تىزىتكۈن”, “ec”: “تەڭشەك ئىستىقامەت”, “ap”: “قىلىش”, “wn”: “ئاگاھلاندۇرۇش”, “ds”: “مەلۇمات بىخەتەرلىكى”, “dd”: “سىزىقلىق مەلۇماتنى تاپشۇرۇش”, “rr”: “قائىدىلەرنى يېزىش ئۈچۈن regex نى ئىشلىتىڭ”},<br>“vi”: {“dm”: “Chế độ tối”, “sd”: “Hiển thị gỡ lỗi”, “cm”: “Hủy đánh giá”, “ca”: “Hủy hoạt hình”, “ab”: “Về”, “si”: “Đề xuất khoảng thời gian 50 giây”, “mi”: “Sửa khoảng cách”, “cu”: “Kiểm tra cập nhật”, “cc”: “Sao chép cuộc trò chuyện”, “pp”: “Làm sạch trang”, “ls”: “Hiển thị màn hình lớn”, “fs”: “Hiển thị toàn màn hình”, “sc”: “Nói đầy đủ”, “it”: “Chặn Theo Dõi”, “ec”: “Luôn thay đổi”, “ap”: “Đánh giá”, “wn”: “Cảnh báo”, “ds”: “Bảo mật dữ liệu”, “dd”: “Phát hiện dữ liệu nhạy cảm”, “rr”: “Sử dụng regex để viết quy tắc”},<br>“zh-CN”: {“dm”: “暗色主题”, “sd”: “显示调试”, “cm”: “取消审计”, “ca”: “取消动画”, “ab”: “关于”, “si”: “建议间隔50秒以上，作者平时设置的是900秒”, “mi”: “调整间隔”, “cu”: “检查更新”, “cc”: “克隆对话”, “pp”: “净化页面”, “ls”: “展示大屏”, “fs”: “展示全屏”, “sc”: “言无不尽”, “it”: “拦截跟踪”, “ec”: “日新月异”, “ap”: “赞赏鼓励”, “wn”: “警告”, “ds”: “数据安全”, “dd”: “你输入的内容里存在以下敏感数据，已为你自动化脱敏”, “rr”: “本功能会将聊天输入框里的敏感信息进行脱敏和警告<br>请根据正则表达式语法编写数据安全规则，不同的规则用换行间隔”},<br>“zh-TW”: {“dm”: “暗黑模式”, “sd”: “顯示調試”, “cm”: “取消稽核”, “ca”: “取消動畫”, “ab”: “關於”, “si”: “建議間隔50秒，作者平時設置的是900秒”, “mi”: “調整間隔”, “cu”: “檢查更新”, “cc”: “複製對話”, “pp”: “淨化頁面”, “ls”: “顯示大螢幕”, “fs”: “顯示全螢幕”, “sc”: “言無不盡”, “it”: “拦截追踪”, “ec”: “日新月異”, “ap”: “讚賞鼓勵”, “wn”: “警告”, “ds”: “資料安全”, “dd”: “發現敏感數據”, “rr”: “使用正則表達式撰寫規則”}<br>}<br>}<br>&#96;;<br>lang &#x3D; JSON.parse(lang);<br>for(let k in lang.local){<br>if (k.length &gt; 2 &amp;&amp; !(k.slice(0, 2) in lang.local)) {<br>lang.local[k.slice(0, 2)] &#x3D; lang.local[k];<br>}<br>}<br>const nls &#x3D; navigator.languages;<br>let language &#x3D; “zh-CN”;<br>for (let j &#x3D; 0; j &lt; nls.length; j++) {<br>let nl &#x3D; nls[j];<br>if (nl in lang.local) {<br>language &#x3D; nl;<br>break;<br>} else if (nl.length &gt; 2 &amp;&amp; nl.slice(0, 2) in lang.local) {<br>language &#x3D; nl.slice(0, 2);<br>break;<br>}<br>}<br>&#x2F;&#x2F;language &#x3D; “en”; &#x2F;&#x2F;Debug English<br>return [lang.index, lang.local[language], language];<br>};</p>
+<pre><code>const [langIndex, langLocal, language] = getLang();
+
+const tl = function(s) &#123;
+    let r;
+    try &#123;
+        const i = langIndex[s];
+        r = langLocal[i];
+    &#125; catch (e) &#123;
+        r = s;
+    &#125;
+    if (r === undefined) &#123;r = s;&#125;
+    return r;
+&#125;;
+
+const sv = function(key, value = &quot;&quot;) &#123;
+    GM_setValue(key, value);
+&#125;;
+
+const gv = function(key, value = &quot;&quot;) &#123;
+    return GM_getValue(key, value);
+&#125;;
+
+class IndexedDB &#123;
+    constructor(dbName, storeName) &#123;
+        this.dbName = dbName;
+        this.storeName = storeName;
+    &#125;
+
+    async open() &#123;
+        return new Promise((resolve, reject) =&gt; &#123;
+            const openRequest = indexedDB.open(this.dbName, 1);
+
+            openRequest.onupgradeneeded = function(e) &#123;
+                const db = e.target.result;
+                console.log(db.objectStoreNames, this.storeName);
+                if (!db.objectStoreNames.contains(this.storeName)) &#123;
+                    const objectStore = db.createObjectStore(this.storeName, &#123;keyPath: &#39;id&#39;&#125;);
+                    objectStore.createIndex(&#39;name&#39;, &#39;name&#39;, &#123;unique: false&#125;);
+                &#125;
+            &#125;.bind(this);
+
+            openRequest.onsuccess = function(e) &#123;
+                const db = e.target.result;
+                resolve(db);
+            &#125;;
+
+            openRequest.onerror = function(e) &#123;
+                reject(&#39;Error opening db&#39;);
+            &#125;;
+        &#125;);
+    &#125;
+
+    async operate(operation, item) &#123;
+        const db = await this.open();
+        return new Promise((resolve, reject) =&gt; &#123;
+            const tx = db.transaction(this.storeName, &#39;readwrite&#39;);
+            const store = tx.objectStore(this.storeName);
+            let request;
+
+            switch(operation) &#123;
+                case &#39;add&#39;:
+                    request = store.add(item);
+                    break;
+                case &#39;put&#39;:
+                    request = store.put(item);
+                    break;
+                case &#39;delete&#39;:
+                    request = store.delete(item.id);
+                    break;
+                default:
+                    db.close();
+                    reject(&#39;Invalid operation&#39;);
+                    return;
+            &#125;
+
+            request.onsuccess = function() &#123;
+                resolve(request.result);
+            &#125;;
+
+            request.onerror = function() &#123;
+                reject(&#39;Error&#39;, request.error);
+            &#125;;
+
+            tx.oncomplete = function() &#123;
+                db.close();
+            &#125;;
+        &#125;);
+    &#125;
+
+    async operate_get(id) &#123;
+        const db = await this.open();
+        return new Promise((resolve, reject) =&gt; &#123;
+            const tx = db.transaction(this.storeName, &#39;readonly&#39;);
+            const store = tx.objectStore(this.storeName);
+            const request = store.get(id);
+
+            request.onsuccess = function() &#123;
+                resolve(request.result);
+            &#125;;
+
+            request.onerror = function() &#123;
+                reject(&#39;Error&#39;, request.error);
+            &#125;;
+
+            tx.oncomplete = function() &#123;
+                db.close();
+            &#125;;
+        &#125;);
+    &#125;
+
+    async store() &#123;
+        const db = await this.open();
+        const tx = db.transaction(this.storeName, &#39;readonly&#39;);
+        const store = tx.objectStore(this.storeName);
+        return store;
+    &#125;
+
+    async get(id) &#123;
+        return await this.operate_get(id);
+    &#125;
+
+    async add(item) &#123;
+        return await this.operate(&#39;add&#39;, item);
+    &#125;
+
+    async put(item) &#123;
+        return await this.operate(&#39;put&#39;, item);
+    &#125;
+
+    async delete(item) &#123;
+        return await this.operate(&#39;delete&#39;, item);
+    &#125;
+&#125;;
+
+const formatDate = function(d) &#123;
+    return (new Date(d)).toLocaleString();
+&#125;;
+
+const formatDate2 = function(dt) &#123;
+    const [Y, M, D, h, m, s] = [dt.getFullYear(), dt.getMonth() + 1, dt.getDate(), dt.getHours(), dt.getMinutes(), dt.getSeconds()].map(el =&gt; el.toString().padStart(2, &#39;0&#39;));
+    const dtTmp = dt.toLocaleDateString();
+    const currentDate = new Date();
+    const currentDateTmp = currentDate.toLocaleDateString();
+    let formatted_date;
+    if (dtTmp === currentDateTmp) &#123;
+        formatted_date = `$&#123;h&#125;:$&#123;m&#125;`;
+    &#125; else if (Math.floor(Math.abs((new Date(dtTmp)) - (new Date(currentDateTmp))) / (24 * 60 * 60 * 1000)) &lt; 7) &#123;
+        const weekday = language.slice(0, 2) === &quot;zh&quot; ? [&#39;周日&#39;, &#39;周一&#39;, &#39;周二&#39;, &#39;周三&#39;, &#39;周四&#39;, &#39;周五&#39;, &#39;周六&#39;] : [&#39;Sun&#39;, &#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;];
+        formatted_date = weekday[dt.getDay()];
+    &#125; else &#123;
+        formatted_date = `$&#123;M&#125;/$&#123;D&#125;`;
+    &#125;
+    return formatted_date;
+&#125;
+
+const formatJson = function(d) &#123;
+    try &#123;
+        const j = JSON.parse(d);
+        return `&lt;pre&gt;$&#123;JSON.stringify(j, null, 2)&#125;&lt;/pre&gt;`;
+    &#125; catch (e) &#123;
+        return d;
+    &#125;
+&#125;;
+
+const htmlEncode = function(text) &#123;
+    var tempElement = document.createElement(&quot;div&quot;);
+    var textNode = document.createTextNode(text);
+    tempElement.appendChild(textNode);
+    return tempElement.innerHTML;
+&#125;
+
+const setIfr = function(u = &quot;&quot;) &#123;
+    if ($(&quot;#xcanwin&quot;) === null) &#123;
+        const nIfr = document.createElement(&#39;iframe&#39;);
+        nIfr.id = &quot;xcanwin&quot;;
+        nIfr.style = `height: 80px; width: 100%; display: none;`;
+        if (gv(&quot;k_showDebug&quot;, false) === true) &#123;
+            nIfr.style.display = &#39;&#39;;
+        &#125; else &#123;
+            nIfr.style.display = &#39;none&#39;;
+        &#125;
+        if (u) &#123;
+            nIfr.src = u;
+        &#125;
+        nIfr.onload = function() &#123;
+            const nIfrText = $(&quot;#xcanwin&quot;).contentWindow.document.documentElement.innerText;
+            try &#123;
+                $(&quot;#xcanwin&quot;).contentWindow.document.documentElement.style = `background: #FCF3CF; height: 360px; width: 1080px; overflow; auto;`;
+                if (nIfrText.indexOf(`&quot;expires&quot;:&quot;`) &gt; -1) &#123;
+                    console.log(`KeepChatGPT: IFRAME: Expire date: $&#123;formatDate(JSON.parse(nIfrText).expires)&#125;`);
+                    $(&quot;#xcanwin&quot;).contentWindow.document.documentElement.innerHTML = formatJson(nIfrText);
+                &#125; else if (nIfrText.match(/Please stand by|while we are checking your browser|Please turn JavaScript on|Please enable Cookies|reload the page/)) &#123;
+                    console.log(`KeepChatGPT: IFRAME: BypassCF`);
+                &#125;
+            &#125; catch (e) &#123;
+                console.log(`KeepChatGPT: IFRAME: ERROR: $&#123;e&#125;,\nERROR RESPONSE:\n$&#123;nIfrText&#125;`);
+            &#125;
+        &#125;;
+        $(&quot;main&quot;).lastElementChild.appendChild(nIfr);
+    &#125; else&#123;
+        if (u) &#123;
+            $(&quot;#xcanwin&quot;).src = u;
+        &#125;
+    &#125;
+&#125;;
+
+const keepChat = function() &#123;
+    fetch(u).then((response) =&gt; &#123;
+        response.text().then((data) =&gt; &#123;
+            try &#123;
+                const contentType = response.headers.get(&#39;Content-Type&#39;);
+                if (contentType.indexOf(&quot;application/json&quot;) &gt; -1 &amp;&amp; response.status !== 403 &amp;&amp; data.indexOf(`&quot;expires&quot;:&quot;`) &gt; -1) &#123;
+                    console.log(`KeepChatGPT: FETCH: Expire date: $&#123;formatDate(JSON.parse(data).expires)&#125;`);
+                    $(&quot;#xcanwin&quot;).contentWindow.document.documentElement.innerHTML = formatJson(data);
+                &#125; else &#123;
+                    setIfr(u);
+                &#125;
+            &#125; catch (e) &#123;
+                console.log(`KeepChatGPT: FETCH: ERROR: $&#123;e&#125;,\nERROR RESPONSE:\n$&#123;data&#125;`);
+                setIfr(u);
+            &#125;
+        &#125;)
+    &#125;);
+&#125;
+
+const ncheckbox = function() &#123;
+    const nsvg = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;svg&quot;);
+    nsvg.setAttribute(&quot;viewBox&quot;, &quot;0 0 100 30&quot;);
+    nsvg.classList.add(&quot;checkbutton&quot;);
+    nsvg.innerHTML = `&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;path fill=&quot;#E3E3E3&quot; d=&quot;M0 15C0 6.716 6.716 0 15 0h14c8.284 0 15 6.716 15 15s-6.716 15-15 15H15C6.716 30 0 23.284 0 15z&quot;/&gt;&lt;circle fill=&quot;#FFF&quot; cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;13&quot;/&gt;&lt;/g&gt;`;
+    return nsvg.cloneNode(true);
+&#125;;
+
+const ndialog = function(title = &#39;KeepChatGPT&#39;, content = &#39;&#39;, buttonvalue = &#39;OK&#39;, buttonfun = function(t) &#123;return t;&#125;, inputtype = &#39;br&#39;, inputvalue = &#39;&#39;) &#123;
+    const ndivalert = document.createElement(&#39;div&#39;);
+    ndivalert.setAttribute(&quot;class&quot;, &quot;kdialog relative z-50&quot;);
+    ndivalert.innerHTML = `
+</code></pre>
+<div class="fixed inset-0 bg-gray-300/70 dark:bg-gray-600/70"></div>
+<div class="fixed inset-0 overflow-y-auto z-50" style="display: flex; justify-content: center; align-items: center;">
+  <div class="flex items-end justify-center min-h-full p-4 sm:items-center sm:p-0 text-center">
+    <div class="kdialogwin bg-white dark:bg-gray-900 rounded-lg sm:max-w-lg sm:p-6 text-left">
+      <div class="flex items-center justify-between">
+        <div class="kwidth" style="min-width: 15rem">
+          <div class="flex items-center justify-between">
+            <h3 class="dark:text-gray-200 text-gray-900 text-lg">${title}</h3>
+            <p class="kdialogclose" style="cursor: pointer; font-weight: bold; color: #aaa;">X</p>
+          </div>
+          <p class="dark:text-gray-100 mt-2 text-gray-500 text-sm" style="margin-bottom: 0.6rem;">${content}</p>
+          <div class="md:py-3 md:pl-4 border border-black/10 bg-white dark:border-gray-900/50 dark:text-white dark:bg-gray-700 rounded-md shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:shadow-[0_0_15px_rgba(0,0,0,0.10)]">
+            <${inputtype} class="kdialoginput resize-none border-0 bg-transparent p-0 pr-7 focus:ring-0 focus-visible:ring-0 dark:bg-transparent" style="max-height: 12.5rem; height: 1.5rem; outline: none;" placeholder=""></${inputtype}>
+          </div>
+        </div>
+      </div>
+      <div class="flex sm:flex-row-reverse sm:mt-4"><button class="btn btn-neutral kdialogbtn">${buttonvalue}</button>
+      </div>
+    </div>
+  </div>
+</div>
+        `;
+        if (inputtype === 'br') {
+            $(".kdialoginput", ndivalert).parentElement.style.display = 'none';
+        } else if (inputtype === 'img') {
+            $(".kdialoginput", ndivalert).src = inputvalue;
+            $(".kdialoginput", ndivalert).style = `max-height: 19rem; height: unset; display: block; margin: 0 auto;`;
+            $(".kdialogwin", ndivalert).style = `max-width: 37.5rem;`;
+        } else if (inputtype === 'textarea') {
+            $(".kdialoginput", ndivalert).value = inputvalue;
+            $(".kdialoginput", ndivalert).style = `max-height: 19rem; height: 10rem; display: block; margin: 0 auto; width: 100%; white-space: pre;`;
+            $(".kdialogwin", ndivalert).style = `max-width: 100%;`;
+            $(".kdialogwin .kwidth", ndivalert).style = `min-width: 28rem;`;
+        }else {
+            $(".kdialoginput", ndivalert).value = inputvalue;
+        }
+        $(".kdialogclose", ndivalert).onclick = function() {
+            ndivalert.remove();
+        };
+        $(".kdialogbtn", ndivalert).onclick = function() {
+            buttonfun(ndivalert);
+            $(".kdialogclose", ndivalert).onclick();
+        };
+        document.body.appendChild(ndivalert);
+    };
+
+<pre><code>const loadMenu = function() &#123;
+    if ($(&quot;.kmenu&quot;) !== null) &#123;
+        return;
+    &#125;
+    const ndivmenu = document.createElement(&#39;div&#39;);
+    ndivmenu.setAttribute(&quot;class&quot;, &quot;kmenu&quot;);
+    ndivmenu.innerHTML = `
+</code></pre>
+<ul>
+    <li id=nmenuid_af>${tl("调整间隔")}</li>
+    <li id=nmenuid_ds>${tl("数据安全")}</li>
+    <li id=nmenuid_cm>${tl("取消审计")}</li>
+    <li id=nmenuid_cc>${tl("克隆对话")}</li>
+    <li id=nmenuid_sc>${tl("言无不尽")}</li>
+    <li id=nmenuid_pp>${tl("净化页面")}</li>
+    <li id=nmenuid_ls>${tl("展示大屏")}</li>
+    <li id=nmenuid_fs>${tl("展示全屏")}</li>
+    <li id=nmenuid_it>${tl("拦截跟踪")}</li>
+    <li id=nmenuid_ec>${tl("日新月异")}</li>
+    <li id=nmenuid_dm>${tl("暗色主题")}</li>
+    <li id=nmenuid_ca>${tl("取消动画")}</li>
+    <li id=nmenuid_sd>${tl("显示调试")}</li>
+    <li id=nmenuid_cu>${tl("检查更新")}</li>
+    <li id=nmenuid_ap>${tl("赞赏鼓励")}</li>
+    <li id=nmenuid_ab>${tl("关于")}</li>
+</ul>
+`;
+        document.body.appendChild(ndivmenu);
+
+<pre><code>    $(&#39;#nmenuid_sd&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_dm&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_ca&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_cm&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_cc&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_pp&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_ls&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_fs&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_sc&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_it&#39;).appendChild(ncheckbox());
+    $(&#39;#nmenuid_ec&#39;).appendChild(ncheckbox());
+
+    $(&#39;#nmenuid_ds&#39;).onclick = function() &#123;
+        toggleMenu(&#39;hide&#39;);
+        ndialog(`$&#123;tl(&quot;数据安全&quot;)&#125;`, `$&#123;tl(&quot;使用正则编写规则&quot;)&#125;`, `Save`, function(t) &#123;
+            let datasecblocklist;
+            try &#123;
+                datasecblocklist = `$&#123;$(&quot;.kdialoginput&quot;, t).value&#125;\n`.replace(/\r/g,`\n`).replace(/\n+/g, `\n`);
+            &#125; catch (e) &#123;
+                datasecblocklist = gv(&quot;k_datasecblocklist&quot;, datasec_blocklist_default);
+            &#125;
+            sv(&quot;k_datasecblocklist&quot;, datasecblocklist);
+        &#125;, `textarea`, gv(&quot;k_datasecblocklist&quot;, datasec_blocklist_default));
+    &#125;;
+
+    $(&#39;#nmenuid_sd&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            $(&#39;#xcanwin&#39;).style.display = &#39;none&#39;;
+            sv(&quot;k_showDebug&quot;, false);
+        &#125; else &#123;
+            $(&#39;#xcanwin&#39;).style.display = &#39;&#39;;
+            sv(&quot;k_showDebug&quot;, true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_dm&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            $(&#39;#kcg&#39;).style = $(&#39;#kcg&#39;).styleOrigin;
+            sv(&quot;k_theme&quot;, &quot;light&quot;);
+        &#125; else &#123;
+            $(&#39;#kcg&#39;).styleOrigin = $(&#39;#kcg&#39;).style;
+            $(&#39;#kcg&#39;).style.background = &quot;#2C3E50&quot;;
+            $(&#39;#kcg&#39;).style.animation = &quot;none&quot;;
+            $(&#39;#kcg&#39;).style.color = &quot;#ffffff&quot;;
+            $(&#39;#kcg&#39;).style.marginRight = &quot;inherit&quot;;
+            sv(&quot;k_theme&quot;, &quot;dark&quot;);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_ca&#39;).onclick = function() &#123;
+        sv(&quot;k_cancelAnimation&quot;, !$(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;));
+        $(&#39;#kcg&#39;).classList.toggle(&#39;shine&#39;);
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_cm&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_closeModer&quot;, false);
+        &#125; else &#123;
+            sv(&quot;k_closeModer&quot;, true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_af&#39;).onclick = function() &#123;
+        toggleMenu(&#39;hide&#39;);
+        ndialog(`$&#123;tl(&quot;调整间隔&quot;)&#125;`, `$&#123;tl(&quot;建议间隔50秒&quot;)&#125;`, `Go`, function(t) &#123;
+            try &#123;
+                interval2Time = parseInt($(&quot;.kdialoginput&quot;, t).value);
+            &#125; catch (e) &#123;
+                interval2Time = parseInt(gv(&quot;k_interval&quot;, 50));
+            &#125;
+            if (interval2Time &lt; 10) &#123;
+                return;
+            &#125;
+            clearInterval(nInterval2);
+            nInterval2 = setInterval(nInterval2Fun, 1000 * interval2Time);
+            sv(&quot;k_interval&quot;, interval2Time);
+        &#125;, `input`, parseInt(gv(&quot;k_interval&quot;, 50)));
+    &#125;;
+
+    $(&#39;#nmenuid_cc&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_clonechat&quot;, false);
+            cloneChat(false);
+        &#125; else &#123;
+            sv(&quot;k_clonechat&quot;, true);
+            cloneChat(true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_pp&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_cleanlyhome&quot;, false);
+        &#125; else &#123;
+            sv(&quot;k_cleanlyhome&quot;, true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_ls&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_largescreen&quot;, false);
+        &#125; else &#123;
+            sv(&quot;k_largescreen&quot;, true);
+        &#125;
+        $(&quot;#__next .overflow-hidden.w-full&gt;div.overflow-hidden&quot;).classList.toggle(&#39;largescreen&#39;);
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_fs&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_fullscreen&quot;, false);
+            fullScreen(false);
+        &#125; else &#123;
+            sv(&quot;k_fullscreen&quot;, true);
+            fullScreen(true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_sc&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_speakcompletely&quot;, false);
+        &#125; else &#123;
+            sv(&quot;k_speakcompletely&quot;, true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_it&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_intercepttracking&quot;, false);
+            interceptTracking(false);
+        &#125; else &#123;
+            sv(&quot;k_intercepttracking&quot;, true);
+            interceptTracking(true);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_ec&#39;).onclick = function() &#123;
+        if ($(&#39;.checkbutton&#39;, this).classList.contains(&#39;checked&#39;)) &#123;
+            sv(&quot;k_everchanging&quot;, false);
+            location.reload();
+        &#125; else &#123;
+            sv(&quot;k_everchanging&quot;, true);
+            $(&#39;nav.flex&#39;).classList.add(&#39;knav&#39;);
+        &#125;
+        $(&#39;.checkbutton&#39;, this).classList.toggle(&#39;checked&#39;);
+    &#125;;
+
+    $(&#39;#nmenuid_cu&#39;).onclick = function() &#123;
+        toggleMenu(&#39;hide&#39;);
+        checkForUpdates();
+    &#125;;
+
+    $(&#39;#nmenuid_ap&#39;).onclick = function() &#123;
+        ndialog(`$&#123;tl(&quot;赞赏鼓励&quot;)&#125;`, `· 本项目没有研发经费，但是功能研发、升级、BUG修复都会消耗很多个人时间、精力，并且有不少技术研究成本。&lt;br&gt;
+</code></pre>
+<p><br>· 如果你体验完本项目以后眉开眼笑，觉得好用！NB！神器！好顺畅！感觉很棒！NICE！<br><br>· 如果你觉得本项目打开了你进入AI世界的高速通道<br><br>· 如果你希望作者的小猫吃到更好的猫粮、猫罐头<br><br>· 如果本项目对你有帮助<br><br>· 如果本项目提高了你工作效率<br><br>· 如果你希望本项目持续维护、升级更多的功能<br><br>· 如果你希望鼓励、激励作者投入更多的时间精力提升项目，欢迎各位支持和鼓励本项目<code>, </code>更多鼓励方式<code>, function(t) &#123; window.open(</code>${GM_info.script.namespace}#赞赏<code>, &#39;_blank&#39;); &#125;, </code>img<code>, </code><a target="_blank" rel="noopener" href="https://github.com/xcanwin/KeepChatGPT/raw/main/assets/appreciate_wechat.png%60">https://github.com/xcanwin/KeepChatGPT/raw/main/assets/appreciate_wechat.png`</a>);<br>};</p>
+<pre><code>    $(&#39;#nmenuid_ab&#39;).onclick = function() &#123;
+        window.open(GM_info.script.namespace, &#39;_blank&#39;);
+    &#125;;
+&#125;;
+
+const setUserOptions = function() &#123;
+    if (gv(&quot;k_showDebug&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_sd .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        $(&#39;#xcanwin&#39;).style.display = &#39;&#39;;
+    &#125; else &#123;
+        $(&#39;#xcanwin&#39;).style.display = &#39;none&#39;;
+    &#125;
+
+    if (gv(&quot;k_theme&quot;, &quot;light&quot;) === &quot;light&quot;) &#123;
+        $(&#39;#kcg&#39;).styleOrigin = $(&#39;#kcg&#39;).style;
+    &#125; else &#123;
+        $(&#39;#nmenuid_dm .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        $(&#39;#kcg&#39;).style.background = &quot;#2C3E50&quot;;
+        $(&#39;#kcg&#39;).style.animation = &quot;none&quot;;
+        $(&#39;#kcg&#39;).style.color = &quot;#ffffff&quot;;
+        $(&#39;#kcg&#39;).style.marginRight = &quot;inherit&quot;;
+    &#125;
+
+    if (gv(&quot;k_cancelAnimation&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_ca .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        $(&#39;#kcg&#39;).classList.remove(&#39;shine&#39;);
+    &#125; else &#123;
+        $(&#39;#kcg&#39;).classList.add(&#39;shine&#39;);
+    &#125;
+
+    if (gv(&quot;k_closeModer&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_cm .checkbutton&#39;).classList.add(&#39;checked&#39;);
+    &#125;
+
+    if (gv(&quot;k_clonechat&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_cc .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        cloneChat(true);
+    &#125;
+
+    if (gv(&quot;k_cleanlyhome&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_pp .checkbutton&#39;).classList.add(&#39;checked&#39;);
+    &#125;
+
+    if (gv(&quot;k_largescreen&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_ls .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        $(&quot;#__next .overflow-hidden.w-full&gt;div.overflow-hidden&quot;).classList.toggle(&#39;largescreen&#39;);
+    &#125;
+
+    if (gv(&quot;k_fullscreen&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_fs .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        fullScreen(true);
+    &#125;
+
+    if (gv(&quot;k_speakcompletely&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_sc .checkbutton&#39;).classList.add(&#39;checked&#39;);
+    &#125;
+
+    if (gv(&quot;k_intercepttracking&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_it .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        interceptTracking(true);
+    &#125;
+
+    if (gv(&quot;k_everchanging&quot;, false) === true) &#123;
+        $(&#39;#nmenuid_ec .checkbutton&#39;).classList.add(&#39;checked&#39;);
+        $(&#39;nav.flex&#39;).classList.add(&#39;knav&#39;);
+    &#125;
+&#125;;
+
+const toggleMenu = function(action) &#123;
+    const ndivmenu = $(&quot;.kmenu&quot;);
+    if (action === &quot;show&quot;) &#123;
+        ndivmenu.style.display = &#39;block&#39;;
+        if ($(&quot;#kcg&quot;)) &#123;
+            ndivmenu.style.left = `$&#123;$(&quot;#kcg&quot;).getBoundingClientRect().right + 20&#125;px`;
+            ndivmenu.style.top = `$&#123;$(&quot;#kcg&quot;).getBoundingClientRect().top&#125;px`;
+        &#125;
+    &#125; else &#123;
+        ndivmenu.style.display = &#39;none&#39;;
+    &#125;
+&#125;;
+
+const loadKCG = function() &#123;
+    let symbol_prt;
+    if ($(&quot;#kcg&quot;) !== null) &#123;
+        return;
+    &#125;
+    var kcg_html;
+    if (kcg_html !== undefined) &#123;
+        if ($(symbol1_selector)) &#123;
+            kcg_html.innerHTML = kcg_html._symbol1_innerHTML;
+            symbol_prt = findParent($(symbol1_selector), &quot;nav.flex&quot;, 3);
+        &#125; else if ($(symbol2_selector)) &#123;
+            kcg_html.innerHTML = kcg_html._symbol2_innerHTML;
+            symbol_prt = findParent($(symbol2_selector), &quot;.sticky&quot;, 2);
+        &#125;
+        symbol_prt.insertBefore(kcg_html, symbol_prt.childNodes[0]);
+        return;
+    &#125;
+
+    loadMenu();
+    setIfr(u);
+
+    const ndivkcg = document.createElement(&quot;div&quot;);
+    ndivkcg.id = &quot;kcg&quot;;
+    ndivkcg.setAttribute(&quot;class&quot;, &quot;kgold shine flex py-3 px-3 items-center gap-3 rounded-md text-sm mb-1 flex-shrink-0 border border-white/20&quot;);
+
+    const ndivmenu = $(&quot;.kmenu&quot;);
+    ndivkcg.onmouseover = ndivmenu.onmouseover = function() &#123;
+        toggleMenu(&#39;show&#39;);
+    &#125;;
+    ndivkcg.onmouseleave = ndivmenu.onmouseleave = function() &#123;
+        toggleMenu(&#39;hide&#39;);
+    &#125;;
+    ndivkcg.onclick = function() &#123;
+        if (ndivmenu.style.display === &#39;none&#39;) &#123;
+            toggleMenu(&#39;show&#39;);
+        &#125; else &#123;
+            toggleMenu(&#39;hide&#39;);
+        &#125;
+    &#125;;
+    const icon = GM_info.script.icon ? GM_info.script.icon : `$&#123;GM_info.script.namespace&#125;raw/main/assets/logo.svg`;
+    ndivkcg._symbol1_innerHTML = `&lt;img src=&#39;$&#123;icon&#125;&#39; /&gt;Keep$&#123;ndivkcg.id.slice(1,2).toUpperCase()&#125;hatGPT by x$&#123;ndivkcg.id.slice(1,2)&#125;anwin`;
+    ndivkcg._symbol2_innerHTML = `Keep$&#123;ndivkcg.id.slice(1,2).toUpperCase()&#125;hatGPT`;
+
+    if ($(symbol1_selector)) &#123;
+        ndivkcg.innerHTML = ndivkcg._symbol1_innerHTML;
+        symbol_prt = findParent($(symbol1_selector), &quot;nav.flex&quot;, 3);
+    &#125; else if ($(symbol2_selector)) &#123;
+        ndivkcg.innerHTML = ndivkcg._symbol2_innerHTML;
+        symbol_prt = findParent($(symbol2_selector), &quot;.sticky&quot;, 2);
+    &#125;
+    kcg_html = ndivkcg;
+    symbol_prt.insertBefore(kcg_html, symbol_prt.childNodes[0]);
+
+    addStyle();
+    setUserOptions();
+&#125;;
+
+const addStyle = function() &#123;
+    GM_addStyle(`
+</code></pre>
+<p>.kgold {<br>color: #555;<br>background: linear-gradient(to top right, #F0B27A, #FDE184, #F0B27A);<br>animation: gradient 6s ease-in-out infinite;<br>position: relative;<br>overflow: hidden;<br>font-weight: bold;<br>user-select: none;<br>}<br>@keyframes gradient {<br>0%{background-color:#F0B27A;}<br>50%{background-color:#FDE184;}<br>100%{background-color:#F0B27A;}<br>}</p>
+<p>.shine::before {<br>content: ‘’;<br>position: absolute;<br>top: -50%;<br>left: -50%;<br>width: 200%;<br>height: 200%;<br>background: linear-gradient(<br>to bottom right,<br>rgba(255, 255, 255, 0.3),<br>rgba(255, 255, 255, 0.15),<br>rgba(255, 255, 255, 0)<br>);<br>transform: rotate(-45deg);<br>animation: shine 2.8s linear infinite;<br>}<br>@keyframes shine {<br>from {<br>transform: translateX(-50%) translateY(-50%) rotate(-45deg);<br>}<br>to {<br>transform: translateX(150%) translateY(150%) rotate(-45deg);<br>}<br>}</p>
+<p>.kmenu {<br>background-color: #202123;<br>color: #FFFFFF;<br>border: 0.06rem solid #4D4D4F;<br>border-radius: 0.625rem;<br>box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.15);<br>display: none;<br>min-width: 12.5rem;<br>padding: 0.75rem 0;<br>position: absolute;<br>z-index: 1000;<br>}<br>.kmenu::before {<br>content: “”;<br>position: absolute;<br>top: 0rem;<br>bottom: 0rem;<br>left: -6rem;<br>right: 0rem;<br>pointer-events: auto;<br>z-index: -1;<br>}<br>.kmenu::after {<br>content: “”;<br>position: absolute;<br>top: 1rem;<br>left: -1.25rem;<br>border-style: solid;<br>border-width: 0.625rem 0.625rem 0.625rem 0.625rem;<br>border-color: transparent #202123 transparent transparent;<br>}<br>.kmenu li {<br>display: block;<br>padding: 0.5rem 1.5rem;<br>text-align: left;<br>user-select: none;<br>display: flex;<br>align-items: center;<br>}<br>.kmenu li:hover {<br>background-color: #273746;<br>cursor: pointer;<br>}</p>
+<p>main div.items-end&gt;div:first-child {<br>user-select: none;<br>max-width: 30px;<br>cursor: pointer;<br>}</p>
+<p>nav {<br>position: relative;<br>}</p>
+<p>.checkbutton {<br>height: 20px;<br>margin-left: auto;<br>margin-right: -35px;<br>padding-left: 10px;<br>}<br>.checkbutton:hover {<br>cursor: pointer;<br>}<br>.checked path {<br>fill: #30D158;<br>}<br>.checked circle {<br>transform: translateX(14px);<br>transition: transform 0.2s ease-in-out;<br>}</p>
+<p>.largescreen .md\:max-w-2xl, .largescreen .lg\:max-w-xl, .largescreen .xl\:max-w-3xl {<br>max-width: unset;<br>}<br>.largescreen .lg\:px-0 {<br>padding-left: 25px;<br>padding-right: 50px;<br>}<br>@media (min-width:1024px) {<br>.largescreen form.stretch {<br>max-width: 85%;<br>}<br>}<br>.largescreen div.items-end&gt;div.text-xs {<br>top: -20px;<br>left: -5px;<br>margin-left: unset;<br>-webkit-transform: unset;<br>transform: unset;<br>position: absolute;<br>}<br>.largescreen img {<br>width: 653px<br>}</p>
+<p>.fullscreen {<br>max-width: 0px;<br>}<br>.btn-neutral {<br>cursor: pointer;<br>}</p>
+<p>#new-chat-button + div, #expand-sidebar-bottom-button, #nav-toggle-button, #user-menu ~ div {<br>display: none !important;<br>max-height: 0 !important;<br>}</p>
+<p>.navdate {<br>font-size: 0.75rem;<br>padding-right: 0.5rem;<br>}<br>nav.flex div.overflow-y-auto a.hover\:pr-4 {<br>padding-right: unset;<br>}<br>nav.flex div.overflow-y-auto {<br>scrollbar-width: thin;<br>}<br>.gptm {<br>position: absolute;<br>top: 1.15rem;<br>left: 0.95rem;<br>font-size: 0.7rem;<br>font-weight: bold;<br>color: white;<br>}<br>.knav li::after {<br>content: “”;<br>display: block;<br>height: 1px;<br>background: linear-gradient(to right, transparent, #5e5e5e, transparent);<br>}</p>
+<p>#nmenuid_ap {<br>color: #00bf78;<br>}</p>
+<p>nav.flex .transition-all {<br>position: unset;<br>}</p>
+<p>.hide {<br>display: none;<br>}<br>&#96;);<br>};</p>
+<pre><code>const hookFetch = function() &#123;
+    unsafeWindow.fetch = new Proxy(fetch, &#123;
+        apply: function (target, thisArg, argumentsList) &#123;
+            const fetchReqUrl = argumentsList[0];
+            let fetchRsp;
+            try &#123;
+                if (gv(&quot;k_closeModer&quot;, false) &amp;&amp; fetchReqUrl.match(&#39;/backend-api/moderations(\\?|$)&#39;)) &#123;
+                    fetchRsp = Promise.resolve(&#123;
+                        json: () =&gt; &#123;return &#123;&#125;&#125;
+                    &#125;);
+                    return fetchRsp;
+                &#125; else if (gv(&quot;k_closeModer&quot;, false) &amp;&amp; fetchReqUrl.match(&#39;/backend-api/conversation(\\?|$)&#39;)) &#123;
+                    const post_body = JSON.parse(argumentsList[1].body);
+                    post_body.supports_modapi = false;
+                    argumentsList[1].body = JSON.stringify(post_body);
+                &#125; else if (gv(&quot;k_intercepttracking&quot;, false) &amp;&amp; fetchReqUrl.match(&#39;sentry\.io|sentry_key=|widget\.intercom\.io|featuregates\.org|/v1/initialize|api-iam\.intercom\.io|/messenger/|nexus-websocket-a\.intercom\.io|statsigapi\.net|/rgstr|/v1/sdk_exception&#39;)) &#123;
+                    fetchRsp = Promise.resolve(&#123;
+                    &#125;);
+                    return fetchRsp;
+                &#125;
+            &#125; catch (e) &#123;&#125;
+            fetchRsp = target.apply(thisArg, argumentsList);
+            fetchRsp.then(response =&gt; &#123;
+                let clonedResponse = response.clone();
+                clonedResponse.text().then(async fetchRspBody =&gt; &#123;
+                    const fetchRspHeaders = clonedResponse.headers;
+                    if (fetchReqUrl.match(&#39;/api/auth/session(\\?|$)&#39;) &amp;&amp; !global.st_ec) &#123;
+                        const email = JSON.parse(fetchRspBody).user.email;
+                        global.st_ec = new IndexedDB(`KeepChatGPT_$&#123;email&#125;`, &#39;conversations&#39;);
+                        cacheEC();
+                    &#125; else if (gv(&quot;k_everchanging&quot;, false) === true &amp;&amp; fetchReqUrl.match(&#39;/backend-api/conversations\\?.*offset=&#39;)) &#123;
+                        const b = JSON.parse(fetchRspBody).items;
+                        b.forEach(async el =&gt; &#123;
+                            const update_time = new Date(el.update_time);
+                            const ec_tmp = await global.st_ec.get(el.id) || &#123;&#125;;
+                            await global.st_ec.put(&#123;id: el.id, title: el.title, update_time: update_time, last: ec_tmp.last, model: ec_tmp.model&#125;);
+                        &#125;);
+                        setTimeout(function() &#123;
+                            cacheEC();
+                            attachDate();
+                        &#125;, 300);
+                    &#125;
+                &#125;);
+                return clonedResponse;
+            &#125;).catch(error =&gt; &#123;&#125;);
+            return fetchRsp;
+        &#125;
+    &#125;);
+    navigator.sendBeacon = function(url, data) &#123;&#125;;
+&#125;;
+
+const everChanging = function() &#123;
+    if (gv(&quot;k_everchanging&quot;, false) === true) &#123;
+        if (!global.everChangingOnce) &#123;
+            global.everChangingOnce = 1;
+            GM_addStyle(`nav.flex div.overflow-y-auto h3 &#123;display: none;&#125;`);
+        &#125;
+        attachDate();
+    &#125;
+&#125;;
+
+const attachDate = async function() &#123;
+    if (!global.kec_object) return;
+    $$(&#39;nav.flex li a.group&#39;).forEach(el =&gt; &#123;
+        const keyrf = Object.keys(el).find(key =&gt; key.startsWith(&quot;__reactFiber&quot;));
+        const a_id = el[keyrf].return.return.memoizedProps.id;
+        const kec_obj_el = global.kec_object[a_id];
+        const title = kec_obj_el &amp;&amp; kec_obj_el.title || &quot;&quot;;
+        const update_time = kec_obj_el &amp;&amp; kec_obj_el.update_time || &quot;&quot;;
+        const last = kec_obj_el &amp;&amp; kec_obj_el.last || &quot;&quot;;
+        const model = kec_obj_el &amp;&amp; kec_obj_el.model || &quot;&quot;;
+
+        if (!title || !update_time) return;
+        if (!$(&#39;.navtitle&#39;, el) || !$(&#39;.navdate&#39;, el) || !$(&#39;.navlast&#39;, el)) &#123;
+            const cdiv_old = $(`.overflow-hidden`, el);
+            cdiv_old.style.display = &quot;none&quot;;
+            const cdiv_new = document.createElement(&quot;div&quot;);
+            cdiv_new.className = `flex-1 text-ellipsis overflow-hidden break-all relative`;
+            cdiv_new.innerHTML = `
+</code></pre>
+<div style="max-height: unset; max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; position: absolute;" class="navtitle">
+    ${title}
+</div>
+<div style="right: 0;position: absolute;color: grey;font-size: 0.71rem;" class="navdate">
+    ${formatDate2(update_time)}
+</div>
+<br>
+<div style="max-height: unset; max-width: 95%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: gray; font-size: 0.75rem;" class="navlast">
+    ${htmlEncode(last)}
+</div>
+`;
+                el.insertBefore(cdiv_new, el.childNodes[1]);
+            } else if ($('.navtitle', el).innerHTML !== title || $('.navdate', el).innerHTML !== formatDate2(update_time) || $('.navlast', el).innerHTML !== last) {
+                $('.navtitle', el).innerHTML = title;
+                $('.navdate', el).innerHTML = formatDate2(update_time);
+                $('.navlast', el).innerHTML = htmlEncode(last);
+            }
+            if (model.match('gpt-4') && !$('.gptm', el)) {
+                $('svg:first-child', el).setAttribute("stroke", `#FF4CFF`);
+                $('svg:first-child', el).setAttribute("fill", `#FF4CFF`);
+                const ndiv = document.createElement("div");
+                ndiv.classList.add("gptm");
+                const gptab = {"gpt-4": "", "gpt-4-plugins": "p", "gpt-4-browsing": "w", "gpt-4-mobile": "m", "gpt-4-code-interpreter": "c"};
+                ndiv.innerHTML = gptab[model] || "";
+                el.insertBefore(ndiv, $('svg:first-child', el).nextSibling);
+            }
+        });
+
+<pre><code>    const sidebar_chat = $(&quot;nav.flex div.overflow-y-auto&quot;);
+    if (sidebar_chat) &#123;
+        if (sidebar_chat.scrollHeight &gt; sidebar_chat.clientHeight) &#123;
+            sidebar_chat.classList.add(&quot;-mr-2&quot;);
+        &#125; else &#123;
+            sidebar_chat.classList.remove(&quot;-mr-2&quot;);
+        &#125;
+    &#125;
+
+    const crt_con_a = $(&#39;nav.flex li a.group.bg-gray-800&#39;);
+    let crt_con_id = &quot;&quot;;
+    if (crt_con_a) &#123;
+        const crt_con_a_keyrf = Object.keys(crt_con_a).find(key =&gt; key.startsWith(&quot;__reactFiber&quot;));
+        crt_con_id = crt_con_a[crt_con_a_keyrf].return.return.memoizedProps.id;
+    &#125;
+    const m = location.href.match(&#39;/c/(.*?)(\\?|$)&#39;);
+    const crt_con_id2 = m &amp;&amp; m[1];
+    let crt_con_last = &quot;&quot;;
+    let crt_con_model = &quot;&quot;;
+    const crt_con_speak = $$(&quot;main .group.w-full&quot;);
+    const crt_con_speak_last = crt_con_speak &amp;&amp; crt_con_speak[crt_con_speak.length - 1];
+    if (crt_con_id &amp;&amp; crt_con_id2 &amp;&amp; crt_con_id === crt_con_id2 &amp;&amp; crt_con_speak_last) &#123;
+        crt_con_last = $(&quot;div.text-base .markdown&quot;, crt_con_speak_last).innerText.trim().replace(/[\r\n]/g, ``).substr(0, 100);
+        const crt_con_a_keyrf2 = Object.keys(crt_con_speak_last).find(key =&gt; key.startsWith(&quot;__reactFiber&quot;));
+        crt_con_model = crt_con_speak_last[crt_con_a_keyrf2].return.return.memoizedProps.currentModelId;
+    &#125;
+    if (crt_con_id &amp;&amp; global.kec_object[crt_con_id] &amp;&amp; ((crt_con_last &amp;&amp; global.kec_object[crt_con_id].last !== crt_con_last) || (crt_con_model &amp;&amp; global.kec_object[crt_con_id].model !== crt_con_model))) &#123;
+        global.kec_object[crt_con_id].last = crt_con_last;
+        global.kec_object[crt_con_id].model = crt_con_model;
+        const crt_st_ec = await global.st_ec.get(crt_con_id);
+        await global.st_ec.put(&#123;id: crt_con_id, title: crt_st_ec.title, update_time: crt_st_ec.update_time, last: crt_con_last, model: crt_con_model&#125;);
+        $(&#39;.navlast&#39;, crt_con_a).innerHTML = htmlEncode(crt_con_last);
+    &#125;
+&#125;;
+
+const cacheEC = async function() &#123;
+    if (!global.kec_object) global.kec_object = &#123;&#125;;
+    let store = await global.st_ec.store();
+    let request = store.openCursor();
+    request.onsuccess = function(e) &#123;
+        let cursor = e.target.result;
+        if (cursor) &#123;
+            const id = cursor.value.id || &quot;&quot;;
+            const title = cursor.value.title || &quot;&quot;;
+            const update_time = cursor.value.update_time || &quot;&quot;;
+            const last = cursor.value.last || &quot;&quot;;
+            const model = cursor.value.model || &quot;&quot;;
+            if (!global.kec_object[id]) &#123;
+                global.kec_object[id] = &#123;&#125;;
+            &#125;
+            global.kec_object[id].title = title;
+            global.kec_object[id].update_time = update_time;
+            global.kec_object[id].last = last;
+            global.kec_object[id].model = model;
+            cursor.continue();
+        &#125;
+    &#125;;
+&#125;;
+
+const verInt = function(vs) &#123;
+    const vl = vs.split(&#39;.&#39;);
+    let vi = 0;
+    for (let i = 0; i &lt; vl.length &amp;&amp; i &lt; 3; i++) &#123;
+        vi += parseInt(vl[i]) * (1000 ** (2 - i));
+    &#125;
+    return vi;
+&#125;;
+
+const checkForUpdates = function() &#123;
+    const crv = GM_info.script.version;
+    let updateURL = GM_info.scriptUpdateURL || GM_info.script.updateURL || GM_info.script.downloadURL;
+    updateURL = `$&#123;updateURL&#125;?t=$&#123;Date.now()&#125;`;
+    fetch(updateURL, &#123;
+        cache: &#39;no-cache&#39;
+    &#125;).then((response) =&gt; &#123;
+        response.text().then((data) =&gt; &#123;
+            const m = data.match(/@version\s+(\S+)/);
+            const ltv = m &amp;&amp; m[1];
+            if (ltv &amp;&amp; verInt(ltv) &gt; verInt(crv)) &#123;
+                ndialog(`$&#123;tl(&quot;检查更新&quot;)&#125;`, `$&#123;tl(&quot;当前版本&quot;)&#125;: $&#123;crv&#125;, $&#123;tl(&quot;发现最新版&quot;)&#125;: $&#123;ltv&#125;`, `UPDATE`, function(t) &#123;
+                    window.open(updateURL, &#39;_blank&#39;);
+                &#125;);
+            &#125; else &#123;
+                ndialog(`$&#123;tl(&quot;检查更新&quot;)&#125;`, `$&#123;tl(&quot;当前版本&quot;)&#125;: $&#123;crv&#125;, $&#123;tl(&quot;已是最新版&quot;)&#125;`, `OK`);
+            &#125;
+        &#125;);
+    &#125;).catch(e =&gt; console.log(e));
+&#125;;
+
+const cloneChat = function(action) &#123;
+    if (action === true) &#123;
+        window.addEventListener(&#39;click&#39;, cloneChat.listen_Click);
+    &#125; else &#123;
+        window.removeEventListener(&#39;click&#39;, cloneChat.listen_Click);
+    &#125;
+&#125;;
+
+cloneChat.listen_Click = function(event) &#123;
+    const avatarSelector = &quot;main div.items-end&gt;div:first-child&quot;;
+    let avatarDiv;
+    if (event.target.matches(avatarSelector)) &#123;
+        avatarDiv = event.target;
+    &#125; else &#123;
+        avatarDiv = findParent(event.target, avatarSelector);
+    &#125;
+    if (avatarDiv) &#123;
+        if ($(&#39;text&#39;, avatarDiv) &amp;&amp; $(&#39;text&#39;, avatarDiv).innerHTML === &quot;ChatGPT&quot;) &#123;
+            $(&#39;text&#39;, avatarDiv).remove();
+        &#125;
+        const content = findParent(avatarDiv, &quot;div.text-base&quot;, 2).childNodes[1].innerText.trim();
+        $(&quot;form.stretch textarea&quot;).value = &quot;&quot;;
+        $(&quot;form.stretch textarea&quot;).focus();
+        document.execCommand(&#39;insertText&#39;, false, content);
+    &#125;
+&#125;;
+
+const cleanlyHome = function() &#123;
+    if (location.href.match(/https:\/\/chat\.openai\.com\/\??/) &amp;&amp; gv(&quot;k_cleanlyhome&quot;, false) === true) &#123;
+        if ($(&quot;main h1&quot;) &amp;&amp; $(&quot;main h1&quot;).innerText.match(/^ChatGPT(\nPLUS)?$/)) &#123;
+            $(&quot;main h1&quot;).classList.add(&#39;text-gray-200&#39;);
+            const nSpan = document.createElement(&#39;span&#39;);
+            nSpan.className = &#39;bg-yellow-200 text-yellow-900 py-0.5 px-1.5 text-xs md:text-sm rounded-md uppercase&#39;;
+            nSpan.textContent = `KEEP`;
+            $(&quot;main h1&quot;).appendChild(nSpan);
+        &#125;
+        if ($(&#39;form.stretch .grow .bottom-full&#39;)) &#123;
+            $(&#39;form.stretch .grow .bottom-full&#39;).classList.add(&#39;hide&#39;);
+        &#125;
+        if ($(&#39;main .underline&#39;) &amp;&amp; $(&quot;main .underline&quot;).parentElement.innerText.match(&quot;produce inaccurate&quot;)) &#123;
+            $(&quot;main .underline&quot;).parentElement.classList.add(&#39;hide&#39;);
+        &#125;
+        const utp_svg = $(`nav.flex path[d=&quot;M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2&quot;]`);
+        if (utp_svg &amp;&amp; findParent(utp_svg, `a`, 4)) &#123;
+            findParent(utp_svg, `a`, 4).classList.add(&#39;hide&#39;);
+        &#125;
+    &#125;
+&#125;;
+
+const fullScreen = function(action) &#123;
+    if (action === true) &#123;
+        if ($(&quot;#kfull&quot;) === null || $(&#39;#kfull&#39;).style.display === &quot;none&quot;) &#123;
+            const ndivkfull = document.createElement(&quot;div&quot;);
+            ndivkfull.id = &quot;kfull&quot;;
+            ndivkfull.setAttribute(&quot;class&quot;, &quot;btn relative btn-neutral border-0 md:border&quot;);
+            ndivkfull.innerHTML = `KEEP`;
+            ndivkfull.onclick = function() &#123;
+                sv(&quot;k_fullscreen&quot;, false);
+                fullScreen(false);
+                $(&#39;#nmenuid_fs .checkbutton&#39;).classList.toggle(&#39;checked&#39;);
+            &#125;;
+            const symbol3_selector = `form.stretch .justify-center`;
+            let nInterval3 = setInterval(() =&gt; &#123;
+                if ($(symbol3_selector) &amp;&amp; $(symbol2_selector) === null) &#123;
+                    if ($(&quot;#kfull&quot;) === null) &#123;
+                        $(symbol3_selector).insertBefore(ndivkfull, $(symbol3_selector).childNodes[0]);
+                    &#125; else if ($(&#39;#kfull&#39;) &amp;&amp; $(&#39;#kfull&#39;).style.display === &quot;none&quot;) &#123;
+                        $(&#39;#kfull&#39;).style.display = &#39;&#39;;
+                    &#125;
+                    $(&quot;#__next .overflow-hidden.w-full&gt;div.overflow-x-hidden&quot;).classList.add(&#39;fullscreen&#39;);
+                    clearInterval(nInterval3);
+                &#125;
+            &#125;, 300);
+        &#125;
+    &#125; else &#123;
+        if ($(&#39;#kfull&#39;) &amp;&amp; $(&#39;#kfull&#39;).style.display === &quot;&quot;) &#123;
+            $(&#39;#kfull&#39;).style.display = &#39;none&#39;;
+        &#125;
+        if ($(&quot;#__next .overflow-hidden.w-full&gt;div.overflow-x-hidden&quot;)) &#123;
+            $(&quot;#__next .overflow-hidden.w-full&gt;div.overflow-x-hidden&quot;).classList.remove(&#39;fullscreen&#39;);
+        &#125;
+    &#125;
+&#125;;
+
+const speakCompletely = function() &#123;
+    if (gv(&quot;k_speakcompletely&quot;, false) === true) &#123;
+        const continue_svg_selector = `form.stretch .justify-center polygon[points=&quot;11 19 2 12 11 5 11 19&quot;]:not(.ct_clicked)`;
+        if ($(continue_svg_selector)) &#123;
+            setTimeout(function() &#123;
+                findParent($(continue_svg_selector), `button`).click();
+                $(continue_svg_selector).classList.add(&#39;ct_clicked&#39;);
+            &#125;, 1000);
+        &#125;
+    &#125;
+&#125;;
+
+const dataSec = function() &#123;
+    if (gv(&quot;k_datasecblocklist&quot;, datasec_blocklist_default)) &#123;
+        $(&quot;form.stretch textarea&quot;).addEventListener(&#39;input&#39;, dataSec.listen_input);
+    &#125; else &#123;
+        $(&quot;form.stretch textarea&quot;).removeEventListener(&#39;input&#39;, dataSec.listen_input);
+    &#125;
+&#125;;
+
+dataSec.listen_input = function(event) &#123;
+    let ms = [];
+    gv(&quot;k_datasecblocklist&quot;, datasec_blocklist_default).split(`\n`).forEach(e =&gt; &#123;
+        if (e) &#123;
+            const m = $(&quot;form.stretch textarea&quot;).value.match(e);
+            if (m &amp;&amp; m[0]) &#123;
+                $(&quot;form.stretch textarea&quot;).value = $(&quot;form.stretch textarea&quot;).value.replaceAll(m[0], ``);
+                ms.push(m[0]);
+            &#125;
+        &#125;
+    &#125;);
+    if (ms.join(`\n`).trim()) &#123;
+        ndialog(`⚠️$&#123;tl(&quot;警告&quot;)&#125;`, `$&#123;tl(&quot;发现敏感数据&quot;)&#125;`, `Thanks`, function(t) &#123;&#125;, `textarea`, ms.join(`\n`));
+    &#125;
+&#125;;
+
+const interceptTracking = function(action) &#123;
+    if (action === true) &#123;
+        window.addEventListener(&#39;beforescriptexecute&#39;, interceptTracking.listen_beforescriptexecute);
+    &#125; else &#123;
+        window.removeEventListener(&#39;beforescriptexecute&#39;, interceptTracking.listen_beforescriptexecute);
+    &#125;
+&#125;;
+
+interceptTracking.listen_beforescriptexecute = function(event) &#123;
+    const scriptElement = event.target;
+    if (scriptElement.src.match(&#39;widget\.intercom\.io&#39;)) &#123;
+        event.preventDefault();
+        scriptElement.textContent = ``;
+        scriptElement.remove();
+    &#125;
+&#125;;
+
+const findParent = function(el, parentSelector, level = 5) &#123;
+    if (el === null) &#123;
+        return null;
+    &#125;
+    let parent = el.parentNode;
+    let count = 1;
+    while (parent &amp;&amp; count &lt;= level) &#123;
+        if (parent &amp;&amp; parent.constructor !== HTMLDocument &amp;&amp; parent.matches(parentSelector)) &#123;
+            return parent;
+        &#125;
+        parent = parent.parentNode;
+        count++;
+    &#125;
+    return null;
+&#125;;
+
+$(&quot;body&quot;).onresize = function() &#123;
+    if ($(&#39;#nmenuid_fs .checkbutton&#39;)) &#123;
+        if (gv(&quot;k_fullscreen&quot;, false) === true) &#123;
+            $(&#39;#nmenuid_fs .checkbutton&#39;).classList.add(&#39;checked&#39;);
+            fullScreen(true);
+        &#125; else if (gv(&quot;k_fullscreen&quot;, false) === false) &#123;
+            $(&#39;#nmenuid_fs .checkbutton&#39;).classList.remove(&#39;checked&#39;);
+            fullScreen(false);
+        &#125;
+    &#125;
+&#125;;
+
+const nInterval1Fun = function() &#123;
+    if ($(symbol1_selector) || $(symbol2_selector)) &#123;
+        loadKCG();
+        setIfr();
+        cleanlyHome();
+        speakCompletely();
+        everChanging();
+        dataSec();
+    &#125;
+&#125;;
+
+const nInterval2Fun = function() &#123;
+    if ($(symbol1_selector) || $(symbol2_selector)) &#123;
+        keepChat();
+    &#125;
+&#125;;
+
+hookFetch();
+
+let nInterval1 = setInterval(nInterval1Fun, 300);
+
+let interval2Time = parseInt(gv(&quot;k_interval&quot;, 50));
+let nInterval2 = setInterval(nInterval2Fun, 1000 * interval2Time);
+</code></pre>
+<p>})();<br>x1.00</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script></article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/11f0.html" title="一天入门css"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">一天入门css</div></div></a></div><div class="next-post pull-right"><a href="/post/5297.html" title="脚本_CHATGPT多分支对话显示树状结构对话过程"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">脚本_CHATGPT多分支对话显示树状结构对话过程</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://picx.zhimg.com/v2-a9c966774c2d1f924a3ffe3fb85db199_1440w.jpg?source=172ae18b" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Enoch Cui</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/cuizhenzhi"><i class="fab fa-github"></i><span>正在星际之路...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:2269752188@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Hi, nice to meet you!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">${title}</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/3d90.html" title="9月与10月总结"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="9月与10月总结"/></a><div class="content"><a class="title" href="/post/3d90.html" title="9月与10月总结">9月与10月总结</a><time datetime="2023-10-13T07:48:26.000Z" title="Created 2023-10-13 15:48:26">2023-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/2022.html" title="现代设计美学历程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="现代设计美学历程"/></a><div class="content"><a class="title" href="/post/2022.html" title="现代设计美学历程">现代设计美学历程</a><time datetime="2023-09-18T10:34:43.000Z" title="Created 2023-09-18 18:34:43">2023-09-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/11f0.html" title="一天入门css"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;px=pc&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一天入门css"/></a><div class="content"><a class="title" href="/post/11f0.html" title="一天入门css">一天入门css</a><time datetime="2023-09-03T07:28:54.000Z" title="Created 2023-09-03 15:28:54">2023-09-03</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2023 By Enoch Cui</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="2172983804" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false"> </div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="80" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/about.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://jcdn.yimian.xyz/-api-img-moe@5.0.1/img_17_1920x1080_1200_null_normal.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/about.html&quot;);" href="javascript:void(0);" alt="">关于我</a><div class="blog-slider__text">关于站长</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/about.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/cd82.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://jcdn.yimian.xyz/-api-img-moe@5.0.52/img_526_1920x1080_96_null_normal.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-17</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/cd82.html&quot;);" href="javascript:void(0);" alt="">New research helps explain why Chinas low birth are stuck 经济学人精读 Economist</a><div class="blog-slider__text">再怎么看我也不知道怎么描述它的啦！</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/cd82.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/8170.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://jcdn.yimian.xyz/-api-img-moe@5.0.37/img_372_1920x1200_72_null_normal.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/8170.html&quot;);" href="javascript:void(0);" alt="">计算机网络第二章物理层</a><div class="blog-slider__text">物理层</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/8170.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/b13a.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/wangluocover1.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-03</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/b13a.html&quot;);" href="javascript:void(0);" alt="">计算机网络第一章—体系结构笔记(未完)</a><div class="blog-slider__text">计网，放我一命</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/b13a.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/97185e65.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/shujiaxiaojie.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-03</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/97185e65.html&quot;);" href="javascript:void(0);" alt="">大一暑假小结</a><div class="blog-slider__text">hello, sophomore</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/97185e65.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/673e5681.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/paixusuanfa.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-02</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/673e5681.html&quot;);" href="javascript:void(0);" alt="">快速排序之反思</a><div class="blog-slider__text">这是一篇关于算法排序的文章</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/673e5681.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/51c4.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://jcdn.yimian.xyz/-api-img-moe@5.0.43/img_435_1920x1080_350_null_normal.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/51c4.html&quot;);" href="javascript:void(0);" alt="">China's young want to work 经济学人精读 Economist</a><div class="blog-slider__text">23年上半年年轻人的就业状况</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/51c4.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:24%;}.categoryBar-list{max-height: 380px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 320px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.30/img_300_1920x1080_350_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/金玉良言/&quot;);" href="javascript:void(0);">金玉良言</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.39/img_399_1920x1080_350_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/日记-规划/&quot;);" href="javascript:void(0);">日记/规划</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/日志.webp);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/英语/&quot;);" href="javascript:void(0);">英语</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/计算机网络.webp);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/c/&quot;);" href="javascript:void(0);">c++</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://cdn.staticaly.com/gh/cuizhenzhi/pic_bed@main/img/金玉良言.webp);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/英语/阅读/&quot;);" href="javascript:void(0);">阅读</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.35/img_354_1920x1080_96_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/计算机网络/&quot;);" href="javascript:void(0);">计算机网络</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.30/img_308_1920x1080_96_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/算法/&quot;);" href="javascript:void(0);">算法</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.7/img_77_1920x1080_600_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/经济学人/&quot;);" href="javascript:void(0);">经济学人</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.31/img_312_1920x1080_96_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/paulgraham-com/&quot;);" href="javascript:void(0);">paulgraham.com</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.48/img_487_1920x1080_72_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/java/&quot;);" href="javascript:void(0);">java</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://tuapi.eees.cc/dongman/pc/TUAPI-EEES-CC-0988776897.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/哲学/&quot;);" href="javascript:void(0);">哲学</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://tuapi.eees.cc/dongman/pc/TUAPI-EEES-CC-1995973008.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/论/&quot;);" href="javascript:void(0);">论</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">点击进入</span></li><li class="categoryBar-list-item" style="background:url(https://jcdn.yimian.xyz/-api-img-moe@5.0.53/img_532_1920x1080_96_null_normal.jpg);"> <a class="categoryBar-list-link" onclick="pjax.loadUrl(&quot;categories/论/方法论/&quot;);" href="javascript:void(0);">方法论</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">点击进入</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '0s');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.3.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.9.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://dashboard.4everland.org/" style="margin-inline:5px" data-title="本站采用多线部署，备用线路托管于4EVERLAND" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&amp;logo=IPFS" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="https://www.czz9.top/static/runtime.txt"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
